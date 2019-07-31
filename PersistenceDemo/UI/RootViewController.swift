@@ -74,6 +74,7 @@ final class PostsViewController: UITableViewController {
                 preconditionFailure()
         }
         
+        model.id = UUID().uuidString
         model.title = randomString(length: 8)
         model.created = Date()
         

@@ -3,16 +3,20 @@
     <entity name="Post" representedClassName="Post" syncable="YES" codeGenerationType="category">
         <attribute name="content" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="created" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
-        <attribute name="edited" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="id" attributeType="String" syncable="YES"/>
+        <attribute name="lastEdited" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
         <attribute name="title" attributeType="String" syncable="YES"/>
         <relationship name="tags" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Tag" inverseName="posts" inverseEntity="Tag" syncable="YES"/>
+        <fetchIndex name="byCreated">
+            <fetchIndexElement property="created" type="Binary" order="descending"/>
+        </fetchIndex>
     </entity>
     <entity name="Tag" representedClassName="Tag" syncable="YES" codeGenerationType="category">
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="posts" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Post" inverseName="tags" inverseEntity="Post" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Post" positionX="-63" positionY="-18" width="128" height="120"/>
-        <element name="Tag" positionX="-54" positionY="9" width="128" height="75"/>
+        <element name="Post" positionX="-363.2265625" positionY="46.421875" width="128" height="133"/>
+        <element name="Tag" positionX="-48.6328125" positionY="105.19140625" width="128" height="75"/>
     </elements>
 </model>

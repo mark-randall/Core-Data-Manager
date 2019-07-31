@@ -31,6 +31,12 @@ final class CoreDataManager {
         
         // TODO: pass at least model in
         let container = NSPersistentContainer(name: self.modelName)
+        
+        let description = NSPersistentStoreDescription()
+        description.shouldMigrateStoreAutomatically = true
+        description.shouldInferMappingModelAutomatically = true
+        container.persistentStoreDescriptions =  [description]
+        
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             
             if let error = error as NSError? {
@@ -41,7 +47,6 @@ final class CoreDataManager {
         
         return container
     }()
-    
     
     /// Name of model
     /// TODO: support other types of persistent stores
@@ -130,7 +135,6 @@ final class CoreDataManager {
         return NSFetchedResultsController(fetchRequest: fetchedRequest, managedObjectContext: (context ?? persistentContainer.viewContext), sectionNameKeyPath: nil, cacheName: nil)
     }
     
-    
     /// Perform a unit of work / transaction
     /// Use if multiple updates are begin made to context
     ///
@@ -143,7 +147,6 @@ final class CoreDataManager {
             completion()
         }
     }
-    
     
     /// Perform a unit of work / transaction on background thread
     /// Use if multiple updates are begin made to context

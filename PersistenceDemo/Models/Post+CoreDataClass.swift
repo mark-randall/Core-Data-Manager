@@ -13,7 +13,8 @@ import CoreData
 struct PostAttribute {
     static let content = "content"
     static let created = "created"
-    static let edited = "edited"
+    static let id = "id"
+    static let lastEdited = "lastEdited"
     static let title = "title"
 }
 

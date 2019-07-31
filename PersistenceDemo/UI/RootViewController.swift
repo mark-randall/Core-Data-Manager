@@ -13,7 +13,6 @@ final class PostsViewController: UITableViewController {
 
     // MARK: - Dependencies
     
-    var coreDataManager: CoreDataManager?
     var repository: PostsRepositoryProtocol?
     
     // MARK: - DataSource
@@ -22,6 +21,7 @@ final class PostsViewController: UITableViewController {
     /// TODO: Will be replaced by Swift Standard Library (5.1) or Foundation (iOS >=13) in the future
     private var dataSource: SingleSectionTableViewDiffCalculator<PostData>?
     
+    /// Subscription id. Unsubscribe on deinit
     private var postsSubscriptionToken: SubscriptionToken?
     
     // MARK: - UIViewController Lifecycle
@@ -51,7 +51,7 @@ final class PostsViewController: UITableViewController {
             sectionIndex: 0
         )
         
-        // Subscript to posts
+        // Subscribe to posts
         postsSubscriptionToken = repository?.subscribeToPosts { [weak self] in
             print("Posts updated. \($0.count) total.")
             self?.dataSource?.rows = $0

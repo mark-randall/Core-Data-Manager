@@ -118,6 +118,13 @@
 			path = UI;
 			sourceTree = "<group>";
 		};
+		0204739022F1F78F009ACAA8 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		02325E9822F0A17F00533662 = {
 			isa = PBXGroup;
 			children = (
@@ -146,6 +153,7 @@
 			children = (
 				0204737422F0BFFE009ACAA8 /* Models */,
 				0204738722F0EC36009ACAA8 /* UI */,
+				0204739022F1F78F009ACAA8 /* Common */,
 				02325EA422F0A17F00533662 /* AppDelegate.swift */,
 				02325EA822F0A18000533662 /* Main.storyboard */,
 				02325EAE22F0A18400533662 /* Assets.xcassets */,

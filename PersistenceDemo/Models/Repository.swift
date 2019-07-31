@@ -29,6 +29,9 @@ struct PostData: Equatable {
 // TODO: consider wrapping in a Result
 typealias FetchPostSubscription = ([PostData]) -> Void
 
+// TODO: consider dispose bag patttern in future to support composing disposables
+typealias SubscriptionToken = UUID
+
 /// Post data CRUD
 /// Abstracts underlying data store (Core Data)
 protocol PostsRepositoryProtocol {
@@ -41,6 +44,12 @@ protocol PostsRepositoryProtocol {
     
     /// Fetch all posts
     /// Completion is called when underlying data store updates
+    func subscribeToPosts(_ completion: @escaping FetchPostSubscription) -> SubscriptionToken
+    
+    /// Unsubscribe to posts
+    func unsubscribeToPosts(token: SubscriptionToken)
+    
+    /// Fetch all posts once
     func fetchPosts(_ completion: @escaping FetchPostSubscription)
 }
 
@@ -87,7 +96,7 @@ final class Repository: NSObject, PostsRepositoryProtocol {
     }
 
     
-    private var fetchPostSubscriptions: [FetchPostSubscription] = []
+    private var fetchPostSubscriptions: [SubscriptionToken: FetchPostSubscription] = [:]
     
     // MARK: - PostsRepositoryProtocol methods
     
@@ -146,8 +155,18 @@ final class Repository: NSObject, PostsRepositoryProtocol {
         }
     }
     
+    func subscribeToPosts(_ completion: @escaping FetchPostSubscription) -> SubscriptionToken {
+        let token = UUID()
+        fetchPostSubscriptions[token] = completion
+        fetchPosts(completion)
+        return token
+    }
+    
+    func unsubscribeToPosts(token: SubscriptionToken) {
+        fetchPostSubscriptions[token] = nil
+    }
+    
     func fetchPosts(_ completion: @escaping FetchPostSubscription) {
-        fetchPostSubscriptions.append(completion)
         completion(fetchedPosts)
     }
 }
@@ -163,7 +182,7 @@ extension Repository: NSFetchedResultsControllerDelegate {
             
         case fetchedResultsController:
             let fetchedPosts = self.fetchedPosts
-            fetchPostSubscriptions.forEach { $0(fetchedPosts) }
+            fetchPostSubscriptions.values.forEach { $0(fetchedPosts) }
         default:
             assertionFailure("Invalid FRC delegate method called")
         }

@@ -22,6 +22,8 @@ final class PostsViewController: UITableViewController {
     /// TODO: Will be replaced by Swift Standard Library (5.1) or Foundation (iOS >=13) in the future
     private var dataSource: SingleSectionTableViewDiffCalculator<PostData>?
     
+    private var postsSubscriptionToken: SubscriptionToken?
+    
     // MARK: - UIViewController Lifecycle
     
     override func viewDidLoad() {
@@ -30,6 +32,14 @@ final class PostsViewController: UITableViewController {
         tableView.tableFooterView = UIView()
         
         configureDataSource()
+    }
+    
+    deinit {
+        
+        // Unsubscribe to posts
+        if let postsSubscriptionToken = self.postsSubscriptionToken {
+            repository?.unsubscribeToPosts(token: postsSubscriptionToken)
+        }
     }
     
     private func configureDataSource() {
@@ -41,7 +51,9 @@ final class PostsViewController: UITableViewController {
             sectionIndex: 0
         )
         
-        repository?.fetchPosts { [weak self] in
+        // Subscript to posts
+        postsSubscriptionToken = repository?.subscribeToPosts { [weak self] in
+            print("Posts updated. \($0.count) total.")
             self?.dataSource?.rows = $0
         }
     }

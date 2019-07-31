@@ -1,0 +1,615 @@
+2019-07-30 19:47:09.020538-0500 Cloud Next[15436:3347923] [Global] app did become active ~
+2019-07-30 19:47:09.102044-0500 Cloud Next[15436:3347923] [Global] Update Firestore data. Subscribe to data for event:tokyo and strata:["595308"] and lang: ja ~
+2019-07-30 19:47:09.132351-0500 Cloud Next[15436:3347923] [Sessions] Sessions VM created ~
+2019-07-30 19:47:09.677303-0500 Cloud Next[15436:3347923] [User] FCM subscribe to audience_tokyo_attendee ~
+2019-07-30 19:47:09.678642-0500 Cloud Next[15436:3347923] [API] request made: post events/tokyo/initialize_user/ ["fcm_reg_token": "dN3MJyy3qQQ:APA91bFJx142mxhit1kxKJUPfATZcHVqjiUTfeN6gQ47N0vcM8jDRGN_hpB7jZF8ADIKb5AmRlCEfpx-Fa5TmBDiP5G4exuklKFMdrAKmujcgViNM9w0U6SVFb4_-wpflwMfvYgfbUmm"] ~
+2019-07-30 19:47:09.683528-0500 Cloud Next[15436:3347923] [Map] Solution id is 405a8dbac9a8487a9c1961fa ~
+2019-07-30 19:47:09.978788-0500 Cloud Next[15436:3347923] [Map] Fetching data with MapsIndoors providers ~
+2019-07-30 19:47:09.981040-0500 Cloud Next[15436:3347923] [Map] Synchronize content ~
+2019-07-30 19:47:10.055082-0500 Cloud Next[15436:3347923] [Map] MapControl created ~
+2019-07-30 19:47:10.062599-0500 Cloud Next[15436:3347923] [Sessions] user schedule firestore collection updated. 8 added, 0 removed, and 0 modified ~
+2019-07-30 19:47:10.092358-0500 Cloud Next[15436:3347923] [Map] 3 buildings returned ~
+2019-07-30 19:47:10.140838-0500 Cloud Next[15436:3347923] [Map] 8 categories returned ~
+vbHnsHHOshWZkFODWhamZw5GgnXPE3rp0Y8ODI9B9FaIO9vA_zQLvthjrqtpXILmjsagfcifdZvuvEShn4nDwcMMP-x3gsISnFR4BTtfbj7Yf7plhwIAqk8Wv0DsAq9SOkOdt1lLImH6wl8v_kcqtN3ZzdmKpk0BQ5BHp41a4F2DhcwDG567G2Npx39c9joc2e5CJSSDzlxFjKxQ49UB4bw5J9vv9ZGP7Cf-KHe7mbHgqJJyOq_WbmnLTQ2IJ29tDVGQDwpTuqD4EpgW6usXXdAzutR5tIcIUWOwELiCOBzQTqpa5p0TfuJ5i0A ~
+2019-07-30 19:47:10.241777-0500 Cloud Next[15436:3347923] [Sessions] firestore collection updated. 175 added, 0 removed, and 0 modified ~
+2019-07-30 19:47:10.252995-0500 Cloud Next[15436:3347923] [Newsfeed] for attendee firestore collection updated. 1 added, 0 removed, and 0 modified ~
+2019-07-30 19:47:10.259916-0500 Cloud Next[15436:3347923] [Newsfeed] models created for Attendee 18 ~
+2019-07-30 19:47:10.260153-0500 Cloud Next[15436:3347923] [Map] 156 locations returned ~
+2019-07-30 19:47:10.274710-0500 Cloud Next[15436:3348185] [Newsfeed] repository data update emitted with 19 (not on UI thread) ~
+2019-07-30 19:47:10.276873-0500 Cloud Next[15436:3347923] [Newsfeed] newsfeed is visible with data ~
+2019-07-30 19:47:10.345272-0500 Cloud Next[15436:3347923] [Event] event tokyo wave updated to 1.0 ~
+2019-07-30 19:47:10.346165-0500 Cloud Next[15436:3347923] [Schedule] tabs updated 3 day tabs ~
+2019-07-30 19:47:10.387023-0500 Cloud Next[15436:3347923] [Sessions] models created for attendee 175 ~
+2019-07-30 19:47:12.212125-0500 Cloud Next[15436:3347923] [API] request succeeded: post events/tokyo/initialize_user/ ~
+2019-07-30 19:47:12.217217-0500 Cloud Next[15436:3347923] [User] FCM subscribe to audience_tokyo_attendee ~
+2019-07-30 19:47:12.346374-0500 Cloud Next[15436:3347923] [User] FCM subscribe to tokyo_settings_announcements ~
+2019-07-30 19:47:12.347802-0500 Cloud Next[15436:3347923] [User] FCM subscribe to tokyo_settings_sessionupdates ~
+2019-07-30 19:47:12.429317-0500 Cloud Next[15436:3347923] [Map] Synchronize content completed ~
+2019-07-30 19:47:12.429362-0500 Cloud Next[15436:3347923] [Map] Fetching data with MapsIndoors providers ~
+2019-07-30 19:47:12.429911-0500 Cloud Next[15436:3347923] [Map] 3 buildings returned ~
+2019-07-30 19:47:12.485378-0500 Cloud Next[15436:3347923] [Map] 8 categories returned ~
+2019-07-30 19:47:12.485607-0500 Cloud Next[15436:3347923] [Map] 156 locations returned ~
+2019-07-30 19:47:12.558385-0500 Cloud Next[15436:3347923] [Sessions] firestore collection updated. 0 added, 0 removed, and 19 modified ~
+2019-07-30 19:47:12.558451-0500 Cloud Next[15436:3347923] [Sessions] for 595308 firestore collection updated. 0 added, 0 removed, and 0 modified ~
+2019-07-30 19:47:12.558906-0500 Cloud Next[15436:3347923] [Sessions] models created for 595308 0 ~
+2019-07-30 19:47:12.559298-0500 Cloud Next[15436:3347923] [Newsfeed] models created for Attendee 19 ~
+2019-07-30 19:47:12.563125-0500 Cloud Next[15436:3348185] [Newsfeed] repository data update emitted with 20 (not on UI thread) ~
+2019-07-30 19:47:12.571913-0500 Cloud Next[15436:3347923] [Sessions] models created for attendee 175 ~
+2019-07-30 19:47:12.773490-0500 Cloud Next[15436:3347923] [Sessions] 175 total session models ~
+2019-07-30 19:47:12.778426-0500 Cloud Next[15436:3347923] [Event] current event tokyo has dates [2019-07-29 15:00:00 +0000, 2019-07-30 15:00:00 +0000, 2019-07-31 15:00:00 +0000] ~
+2019-07-30 19:47:12.786104-0500 Cloud Next[15436:3347923] [Sessions] Sessions Day VM created July 30日 Tuesday ~
+2019-07-30 19:47:12.786725-0500 Cloud Next[15436:3347923] [Sessions] Sessions Day VM created July 31日 Wednesday ~
+2019-07-30 19:47:12.787312-0500 Cloud Next[15436:3347923] [Sessions] Sessions Day VM created August 1日 Thursday ~
+2019-07-30 19:47:12.817265-0500 Cloud Next[15436:3348162] [Schedule] update from repo for: 2019-07-29 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 19:47:12.820390-0500 Cloud Next[15436:3348182] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 19:47:12.823158-0500 Cloud Next[15436:3348162] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 19:47:12.825752-0500 Cloud Next[15436:3348185] [Schedule] update from repo for: 2019-07-31 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 19:47:17.558588-0500 Cloud Next[15436:3347923] [Sessions] office hours firestore collection updated. 0 added, 0 removed, and 0 modified ~
+2019-07-30 19:47:17.604207-0500 Cloud Next[15436:3347923] [Speakers] firestore collection updated. 0 added, 0 removed, and 25 modified ~
+2019-07-30 19:47:17.614523-0500 Cloud Next[15436:3348121] [Schedule] update from repo for: 2019-07-29 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 19:47:17.617860-0500 Cloud Next[15436:3348159] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 19:47:17.620489-0500 Cloud Next[15436:3348160] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 19:47:17.622662-0500 Cloud Next[15436:3347923] [Sessions] office hours models created 0 ~
+2019-07-30 19:47:17.622808-0500 Cloud Next[15436:3348191] [Schedule] update from repo for: 2019-07-31 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 19:48:52.002269-0500 Cloud Next[15436:3347923] [Sessions] firestore collection updated. 0 added, 0 removed, and 1 modified ~
+2019-07-30 19:48:52.011085-0500 Cloud Next[15436:3347923] [Sessions] models created for attendee 175 ~
+2019-07-30 19:48:52.214769-0500 Cloud Next[15436:3347923] [Sessions] 175 total session models ~
+2019-07-30 19:48:52.257039-0500 Cloud Next[15436:3348385] [Schedule] update from repo for: 2019-07-29 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 19:48:52.260980-0500 Cloud Next[15436:3348385] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 19:48:52.265498-0500 Cloud Next[15436:3348529] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 19:48:52.269038-0500 Cloud Next[15436:3348793] [Schedule] update from repo for: 2019-07-31 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 19:48:57.431644-0500 Cloud Next[15436:3347923] [Sessions] firestore collection updated. 0 added, 0 removed, and 1 modified ~
+2019-07-30 19:48:57.438671-0500 Cloud Next[15436:3347923] [Sessions] models created for attendee 175 ~
+2019-07-30 19:48:57.642360-0500 Cloud Next[15436:3347923] [Sessions] 175 total session models ~
+2019-07-30 19:48:57.685653-0500 Cloud Next[15436:3348385] [Schedule] update from repo for: 2019-07-29 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 19:48:57.689605-0500 Cloud Next[15436:3348385] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 19:48:57.694126-0500 Cloud Next[15436:3348529] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 19:48:57.697921-0500 Cloud Next[15436:3348793] [Schedule] update from repo for: 2019-07-31 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 19:49:01.265301-0500 Cloud Next[15436:3347923] [Sessions] firestore collection updated. 0 added, 0 removed, and 1 modified ~
+2019-07-30 19:49:01.276768-0500 Cloud Next[15436:3347923] [Sessions] models created for attendee 175 ~
+2019-07-30 19:49:01.480192-0500 Cloud Next[15436:3347923] [Sessions] 175 total session models ~
+2019-07-30 19:49:01.521331-0500 Cloud Next[15436:3348811] [Schedule] update from repo for: 2019-07-29 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 19:49:01.525312-0500 Cloud Next[15436:3348811] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 19:49:01.529755-0500 Cloud Next[15436:3348793] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 19:49:01.533211-0500 Cloud Next[15436:3348385] [Schedule] update from repo for: 2019-07-31 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 19:49:04.782969-0500 Cloud Next[15436:3347923] [Sessions] firestore collection updated. 0 added, 0 removed, and 1 modified ~
+2019-07-30 19:49:04.791087-0500 Cloud Next[15436:3347923] [Sessions] models created for attendee 175 ~
+2019-07-30 19:49:04.993720-0500 Cloud Next[15436:3347923] [Sessions] 175 total session models ~
+2019-07-30 19:49:05.028738-0500 Cloud Next[15436:3348793] [Schedule] update from repo for: 2019-07-29 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 19:49:05.031476-0500 Cloud Next[15436:3348793] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 19:49:05.034627-0500 Cloud Next[15436:3348811] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 19:49:05.037258-0500 Cloud Next[15436:3348793] [Schedule] update from repo for: 2019-07-31 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 19:49:32.550647-0500 Cloud Next[15436:3347923] [Sessions] firestore collection updated. 0 added, 0 removed, and 1 modified ~
+2019-07-30 19:49:32.557921-0500 Cloud Next[15436:3347923] [Sessions] models created for attendee 175 ~
+2019-07-30 19:49:32.761430-0500 Cloud Next[15436:3347923] [Sessions] 175 total session models ~
+2019-07-30 19:49:32.803499-0500 Cloud Next[15436:3348385] [Schedule] update from repo for: 2019-07-29 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 19:49:32.810080-0500 Cloud Next[15436:3348385] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 19:49:32.814493-0500 Cloud Next[15436:3348793] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 19:49:32.818033-0500 Cloud Next[15436:3348866] [Schedule] update from repo for: 2019-07-31 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 19:49:44.769084-0500 Cloud Next[15436:3347923] [Sessions] firestore collection updated. 0 added, 0 removed, and 1 modified ~
+2019-07-30 19:49:44.776043-0500 Cloud Next[15436:3347923] [Sessions] models created for attendee 175 ~
+2019-07-30 19:49:44.979597-0500 Cloud Next[15436:3347923] [Sessions] 175 total session models ~
+2019-07-30 19:49:45.022183-0500 Cloud Next[15436:3348866] [Schedule] update from repo for: 2019-07-29 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 19:49:45.026183-0500 Cloud Next[15436:3348866] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 19:49:45.030716-0500 Cloud Next[15436:3348867] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 19:49:45.034256-0500 Cloud Next[15436:3348866] [Schedule] update from repo for: 2019-07-31 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 19:50:06.405894-0500 Cloud Next[15436:3347923] [Sessions] firestore collection updated. 0 added, 0 removed, and 1 modified ~
+2019-07-30 19:50:06.412858-0500 Cloud Next[15436:3347923] [Sessions] models created for attendee 175 ~
+2019-07-30 19:50:06.616306-0500 Cloud Next[15436:3347923] [Sessions] 175 total session models ~
+2019-07-30 19:50:06.657147-0500 Cloud Next[15436:3348978] [Schedule] update from repo for: 2019-07-29 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 19:50:06.661105-0500 Cloud Next[15436:3348978] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 19:50:06.665561-0500 Cloud Next[15436:3348866] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 19:50:06.669410-0500 Cloud Next[15436:3348979] [Schedule] update from repo for: 2019-07-31 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+R 'Mohamad Sukkar' + SPEAKER 'Michael Baldwin' (not on UI thread) ~
+2019-07-30 19:52:00.383909-0500 Cloud Next[15436:3347923] [Sessions] firestore collection updated. 0 added, 0 removed, and 1 modified ~
+2019-07-30 19:52:00.390790-0500 Cloud Next[15436:3347923] [Sessions] models created for attendee 175 ~
+2019-07-30 19:52:00.593453-0500 Cloud Next[15436:3347923] [Sessions] 175 total session models ~
+2019-07-30 19:52:00.633130-0500 Cloud Next[15436:3349170] [Schedule] update from repo for: 2019-07-29 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 19:52:00.637124-0500 Cloud Next[15436:3349170] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 19:52:00.641502-0500 Cloud Next[15436:3349252] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 19:52:00.645455-0500 Cloud Next[15436:3349505] [Schedule] update from repo for: 2019-07-31 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 19:52:00.665315-0500 Cloud Next[15436:3349170] [Sessions] FILTER value:'track-cloud-ai-platform-to-ml-raihusaikuru + FILTER value:'track-cloud-ml-engine-api + FILTER value:'track-cloud-deployment-manager + FILTER value:'track-made-by-google-hadouea + FILTER value:'track-cloud-memorystore + FILTER value:'track-cloud-key-management-service + FILTER value:'track-gcp-marketplace + SPEAKER 'Mizuki Hsu' + TEXT 'M' + FILTER value:'track-cloud-machine-learning-api + SPEAKER 'Michelle Goodstein' + SPEAKER 'Mohamad Sukkar' + FILTER value:'track-cloud-ml-engine + FILTER value:'track-cloud-ml-api + FILTER value:'track-hangouts-meet + SPEAKER 'Michael Baldwin' + SPEAKER 'Pedersen Marcello' + FILTER value:'track-app-maker + FILTER value:'track-cloud-for-marketing + FILTER value:'track-hangouts-meet-hadouea (not on UI thread) ~
+2019-07-30 19:52:05.631313-0500 Cloud Next[15436:3347923] [Sessions] firestore collection updated. 0 added, 0 removed, and 1 modified ~
+2019-07-30 19:52:05.642011-0500 Cloud Next[15436:3347923] [Sessions] models created for attendee 175 ~
+2019-07-30 19:52:05.845596-0500 Cloud Next[15436:3347923] [Sessions] 175 total session models ~
+2019-07-30 19:52:05.886819-0500 Cloud Next[15436:3349505] [Schedule] update from repo for: 2019-07-29 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 19:52:05.890781-0500 Cloud Next[15436:3349505] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 19:52:05.895525-0500 Cloud Next[15436:3349170] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 19:52:05.899255-0500 Cloud Next[15436:3349505] [Schedule] update from repo for: 2019-07-31 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+ine-learning-api + FILTER value:'track-hangouts-meet-hadouea + FILTER value:'track-gcp-marketplace + FILTER value:'track-cloud-ai-platform-to-ml-raihusaikuru + FILTER value:'track-cloud-memorystore + SPEAKER 'Michelle Goodstein' + SPEAKER 'Mohamad Sukkar' + TEXT 'M' + FILTER value:'track-hangouts-meet (not on UI thread) ~
+2019-07-30 19:52:06.365995-0500 Cloud Next[15436:3347923] [Sessions] firestore collection updated. 0 added, 0 removed, and 1 modified ~
+2019-07-30 19:52:06.373471-0500 Cloud Next[15436:3347923] [Sessions] models created for attendee 175 ~
+2019-07-30 19:52:06.576966-0500 Cloud Next[15436:3347923] [Sessions] 175 total session models ~
+2019-07-30 19:52:06.618080-0500 Cloud Next[15436:3349505] [Schedule] update from repo for: 2019-07-29 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 19:52:06.622071-0500 Cloud Next[15436:3349505] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 19:52:06.626788-0500 Cloud Next[15436:3349252] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 19:52:06.630426-0500 Cloud Next[15436:3349170] [Schedule] update from repo for: 2019-07-31 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+ine-learning-api + FILTER value:'track-hangouts-meet-hadouea + FILTER value:'track-gcp-marketplace + FILTER value:'track-cloud-ai-platform-to-ml-raihusaikuru + FILTER value:'track-cloud-memorystore + SPEAKER 'Michelle Goodstein' + SPEAKER 'Mohamad Sukkar' + TEXT 'M' + FILTER value:'track-hangouts-meet (not on UI thread) ~
+2019-07-30 19:53:11.748282-0500 Cloud Next[15436:3347923] [Sessions] firestore collection updated. 0 added, 0 removed, and 1 modified ~
+2019-07-30 19:53:11.755879-0500 Cloud Next[15436:3347923] [Sessions] models created for attendee 175 ~
+2019-07-30 19:53:11.959410-0500 Cloud Next[15436:3347923] [Sessions] 175 total session models ~
+2019-07-30 19:53:11.998643-0500 Cloud Next[15436:3349608] [Schedule] update from repo for: 2019-07-29 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 19:53:12.002524-0500 Cloud Next[15436:3349608] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 19:53:12.009158-0500 Cloud Next[15436:3349735] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 19:53:12.012278-0500 Cloud Next[15436:3349736] [Schedule] update from repo for: 2019-07-31 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 19:53:12.026730-0500 Cloud Next[15436:3349608] [Sessions] FILTER value:'track-hangouts-meet-hadouea + FILTER value:'track-cloud-ml-engine + FILTER value:'track-made-by-google-hadouea + FILTER value:'track-cloud-for-marketing + SPEAKER 'Michael Baldwin' + FILTER value:'track-cloud-ai-platform-to-ml-raihusaikuru + FILTER value:'track-cloud-deployment-manager + SPEAKER 'Mizuki Hsu' + SPEAKER 'Michelle Goodstein' + SPEAKER 'Mohamad Sukkar' + FILTER value:'track-cloud-key-management-service + FILTER value:'track-cloud-ml-api + FILTER value:'track-hangouts-meet + SPEAKER 'Pedersen Marcello' + TEXT 'M' + FILTER value:'track-gcp-marketplace + FILTER value:'track-cloud-ml-engine-api + FILTER value:'track-cloud-machine-learning-api + FILTER value:'track-cloud-memorystore + FILTER value:'track-app-maker (not on UI thread) ~
+2019-07-30 19:53:51.805263-0500 Cloud Next[15436:3347923] [Sessions] firestore collection updated. 0 added, 0 removed, and 1 modified ~
+2019-07-30 19:53:51.812081-0500 Cloud Next[15436:3347923] [Sessions] models created for attendee 175 ~
+2019-07-30 19:53:52.015766-0500 Cloud Next[15436:3347923] [Sessions] 175 total session models ~
+2019-07-30 19:53:52.050662-0500 Cloud Next[15436:3349735] [Schedule] update from repo for: 2019-07-29 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 19:53:52.054665-0500 Cloud Next[15436:3349735] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 19:53:52.059425-0500 Cloud Next[15436:3349876] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 19:53:52.062993-0500 Cloud Next[15436:3349735] [Schedule] update from repo for: 2019-07-31 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 19:53:52.080844-0500 Cloud Next[15436:3349877] [Sessions] FILTER value:'track-hangouts-meet-hadouea + FILTER value:'track-cloud-ml-engine + FILTER value:'track-made-by-google-hadouea + FILTER value:'track-cloud-for-marketing + SPEAKER 'Michael Baldwin' + FILTER value:'track-cloud-ai-platform-to-ml-raihusaikuru + FILTER value:'track-cloud-deployment-manager + SPEAKER 'Mizuki Hsu' + SPEAKER 'Michelle Goodstein' + SPEAKER 'Mohamad Sukkar' + FILTER value:'track-cloud-key-management-service + FILTER value:'track-cloud-ml-api + FILTER value:'track-hangouts-meet + SPEAKER 'Pedersen Marcello' + TEXT 'M' + FILTER value:'track-gcp-marketplace + FILTER value:'track-cloud-ml-engine-api + FILTER value:'track-cloud-machine-learning-api + FILTER value:'track-cloud-memorystore + FILTER value:'track-app-maker (not on UI thread) ~
+2019-07-30 19:54:28.848736-0500 Cloud Next[15436:3347923] [Sessions] firestore collection updated. 0 added, 0 removed, and 1 modified ~
+2019-07-30 19:54:28.856467-0500 Cloud Next[15436:3347923] [Sessions] models created for attendee 175 ~
+2019-07-30 19:54:29.060135-0500 Cloud Next[15436:3347923] [Sessions] 175 total session models ~
+2019-07-30 19:54:29.103388-0500 Cloud Next[15436:3349930] [Schedule] update from repo for: 2019-07-29 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 19:54:29.107369-0500 Cloud Next[15436:3349930] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 19:54:29.112151-0500 Cloud Next[15436:3349976] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 19:54:29.115506-0500 Cloud Next[15436:3349930] [Schedule] update from repo for: 2019-07-31 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 19:54:29.132405-0500 Cloud Next[15436:3349977] [Sessions] FILTER value:'track-cloud-ai-platform-to-ml-raihusaikuru + FILTER value:'track-cloud-ml-engine-api + FILTER value:'track-hangouts-meet-hadouea + FILTER value:'track-made-by-google-hadouea + FILTER value:'track-cloud-memorystore + FILTER value:'track-cloud-key-management-service + FILTER value:'track-gcp-marketplace + SPEAKER 'Mizuki Hsu' + TEXT 'M' + FILTER value:'track-cloud-machine-learning-api + SPEAKER 'Michelle Goodstein' + SPEAKER 'Mohamad Sukkar' + FILTER value:'track-cloud-ml-engine + FILTER value:'track-cloud-ml-api + FILTER value:'track-hangouts-meet + SPEAKER 'Michael Baldwin' + SPEAKER 'Pedersen Marcello' + FILTER value:'track-app-maker + FILTER value:'track-cloud-for-marketing + FILTER value:'track-cloud-deployment-manager (not on UI thread) ~
+2019-07-30 19:54:41.725439-0500 Cloud Next[15436:3347923] [Sessions] firestore collection updated. 0 added, 0 removed, and 1 modified ~
+2019-07-30 19:54:41.733143-0500 Cloud Next[15436:3347923] [Sessions] models created for attendee 175 ~
+2019-07-30 19:54:41.936676-0500 Cloud Next[15436:3347923] [Sessions] 175 total session models ~
+2019-07-30 19:54:41.979362-0500 Cloud Next[15436:3349976] [Schedule] update from repo for: 2019-07-29 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 19:54:41.983323-0500 Cloud Next[15436:3349976] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 19:54:41.987823-0500 Cloud Next[15436:3350012] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 19:54:41.991360-0500 Cloud Next[15436:3350013] [Schedule] update from repo for: 2019-07-31 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 19:54:42.009786-0500 Cloud Next[15436:3350014] [Sessions] FILTER value:'track-cloud-ai-platform-to-ml-raihusaikuru + FILTER value:'track-cloud-deployment-manager + FILTER value:'track-cloud-ml-engine-api + FILTER value:'track-made-by-google-hadouea + FILTER value:'track-cloud-memorystore + FILTER value:'track-cloud-key-management-service + FILTER value:'track-gcp-marketplace + SPEAKER 'Mizuki Hsu' + TEXT 'M' + FILTER value:'track-cloud-machine-learning-api + SPEAKER 'Michelle Goodstein' + SPEAKER 'Mohamad Sukkar' + FILTER value:'track-cloud-ml-engine + FILTER value:'track-cloud-ml-api + FILTER value:'track-hangouts-meet + SPEAKER 'Michael Baldwin' + SPEAKER 'Pedersen Marcello' + FILTER value:'track-app-maker + FILTER value:'track-cloud-for-marketing + FILTER value:'track-hangouts-meet-hadouea (not on UI thread) ~
+2019-07-30 19:54:58.382168-0500 Cloud Next[15436:3347923] [Sessions] firestore collection updated. 0 added, 0 removed, and 1 modified ~
+2019-07-30 19:54:58.389365-0500 Cloud Next[15436:3347923] [Sessions] models created for attendee 175 ~
+2019-07-30 19:54:58.592349-0500 Cloud Next[15436:3347923] [Sessions] 175 total session models ~
+2019-07-30 19:54:58.633482-0500 Cloud Next[15436:3350012] [Schedule] update from repo for: 2019-07-29 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 19:54:58.637466-0500 Cloud Next[15436:3350012] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 19:54:58.642370-0500 Cloud Next[15436:3350063] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 19:54:58.645592-0500 Cloud Next[15436:3350064] [Schedule] update from repo for: 2019-07-31 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 19:54:58.665079-0500 Cloud Next[15436:3350065] [Sessions] FILTER value:'track-hangouts-meet-hadouea + FILTER value:'track-cloud-ai-platform-to-ml-raihusaikuru + FILTER value:'track-cloud-ml-engine-api + FILTER value:'track-made-by-google-hadouea + FILTER value:'track-cloud-memorystore + FILTER value:'track-cloud-key-management-service + FILTER value:'track-gcp-marketplace + SPEAKER 'Mizuki Hsu' + TEXT 'M' + FILTER value:'track-cloud-machine-learning-api + SPEAKER 'Michelle Goodstein' + SPEAKER 'Mohamad Sukkar' + FILTER value:'track-cloud-ml-engine + FILTER value:'track-cloud-ml-api + FILTER value:'track-hangouts-meet + SPEAKER 'Michael Baldwin' + SPEAKER 'Pedersen Marcello' + FILTER value:'track-app-maker + FILTER value:'track-cloud-for-marketing + FILTER value:'track-cloud-deployment-manager (not on UI thread) ~
+2019-07-30 19:55:09.814140-0500 Cloud Next[15436:3347923] [Sessions] firestore collection updated. 0 added, 0 removed, and 1 modified ~
+2019-07-30 19:55:09.821279-0500 Cloud Next[15436:3347923] [Sessions] models created for attendee 175 ~
+2019-07-30 19:55:10.023935-0500 Cloud Next[15436:3347923] [Sessions] 175 total session models ~
+2019-07-30 19:55:10.054325-0500 Cloud Next[15436:3350086] [Schedule] update from repo for: 2019-07-29 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 19:55:10.058276-0500 Cloud Next[15436:3350086] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 19:55:10.063010-0500 Cloud Next[15436:3350065] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 19:55:10.066530-0500 Cloud Next[15436:3350086] [Schedule] update from repo for: 2019-07-31 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 19:55:10.081616-0500 Cloud Next[15436:3350087] [Sessions] FILTER value:'track-hangouts-meet-hadouea + FILTER value:'track-cloud-ml-engine + FILTER value:'track-made-by-google-hadouea + FILTER value:'track-cloud-for-marketing + SPEAKER 'Michael Baldwin' + FILTER value:'track-cloud-ai-platform-to-ml-raihusaikuru + FILTER value:'track-cloud-deployment-manager + SPEAKER 'Mizuki Hsu' + SPEAKER 'Michelle Goodstein' + SPEAKER 'Mohamad Sukkar' + FILTER value:'track-cloud-key-management-service + FILTER value:'track-cloud-ml-api + FILTER value:'track-hangouts-meet + SPEAKER 'Pedersen Marcello' + TEXT 'M' + FILTER value:'track-gcp-marketplace + FILTER value:'track-cloud-ml-engine-api + FILTER value:'track-cloud-machine-learning-api + FILTER value:'track-cloud-memorystore + FILTER value:'track-app-maker (not on UI thread) ~
+2019-07-30 19:55:11.374910-0500 Cloud Next[15436:3347923] [Sessions] firestore collection updated. 0 added, 0 removed, and 1 modified ~
+2019-07-30 19:55:11.382160-0500 Cloud Next[15436:3347923] [Sessions] models created for attendee 175 ~
+2019-07-30 19:55:11.585653-0500 Cloud Next[15436:3347923] [Sessions] 175 total session models ~
+2019-07-30 19:55:11.626181-0500 Cloud Next[15436:3350086] [Schedule] update from repo for: 2019-07-29 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 19:55:11.630080-0500 Cloud Next[15436:3350086] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 19:55:11.634493-0500 Cloud Next[15436:3350087] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 19:55:11.638263-0500 Cloud Next[15436:3350086] [Schedule] update from repo for: 2019-07-31 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 19:55:11.656399-0500 Cloud Next[15436:3350065] [Sessions] FILTER value:'track-hangouts-meet-hadouea + FILTER value:'track-cloud-ai-platform-to-ml-raihusaikuru + FILTER value:'track-cloud-ml-engine-api + FILTER value:'track-made-by-google-hadouea + FILTER value:'track-cloud-memorystore + FILTER value:'track-cloud-key-management-service + FILTER value:'track-gcp-marketplace + SPEAKER 'Mizuki Hsu' + TEXT 'M' + FILTER value:'track-cloud-machine-learning-api + SPEAKER 'Michelle Goodstein' + SPEAKER 'Mohamad Sukkar' + FILTER value:'track-cloud-ml-engine + FILTER value:'track-cloud-ml-api + FILTER value:'track-hangouts-meet + SPEAKER 'Michael Baldwin' + SPEAKER 'Pedersen Marcello' + FILTER value:'track-app-maker + FILTER value:'track-cloud-for-marketing + FILTER value:'track-cloud-deployment-manager (not on UI thread) ~
+2019-07-30 19:55:22.589812-0500 Cloud Next[15436:3347923] [Sessions] firestore collection updated. 0 added, 0 removed, and 1 modified ~
+2019-07-30 19:55:22.602748-0500 Cloud Next[15436:3347923] [Sessions] models created for attendee 175 ~
+2019-07-30 19:55:22.805969-0500 Cloud Next[15436:3347923] [Sessions] 175 total session models ~
+2019-07-30 19:55:22.847060-0500 Cloud Next[15436:3350086] [Schedule] update from repo for: 2019-07-29 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 19:55:22.850953-0500 Cloud Next[15436:3350086] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 19:55:22.855661-0500 Cloud Next[15436:3350124] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 19:55:22.859241-0500 Cloud Next[15436:3350086] [Schedule] update from repo for: 2019-07-31 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 19:55:22.878419-0500 Cloud Next[15436:3350125] [Sessions] FILTER value:'track-hangouts-meet-hadouea + FILTER value:'track-cloud-ml-engine + FILTER value:'track-made-by-google-hadouea + FILTER value:'track-cloud-for-marketing + SPEAKER 'Michael Baldwin' + FILTER value:'track-cloud-ai-platform-to-ml-raihusaikuru + FILTER value:'track-cloud-deployment-manager + SPEAKER 'Mizuki Hsu' + SPEAKER 'Michelle Goodstein' + SPEAKER 'Mohamad Sukkar' + FILTER value:'track-cloud-key-management-service + FILTER value:'track-cloud-ml-api + FILTER value:'track-hangouts-meet + SPEAKER 'Pedersen Marcello' + TEXT 'M' + FILTER value:'track-gcp-marketplace + FILTER value:'track-cloud-ml-engine-api + FILTER value:'track-cloud-machine-learning-api + FILTER value:'track-cloud-memorystore + FILTER value:'track-app-maker (not on UI thread) ~
+2019-07-30 19:55:52.036208-0500 Cloud Next[15436:3347923] [Sessions] firestore collection updated. 0 added, 0 removed, and 1 modified ~
+2019-07-30 19:55:52.044024-0500 Cloud Next[15436:3347923] [Sessions] models created for attendee 175 ~
+2019-07-30 19:55:52.247677-0500 Cloud Next[15436:3347923] [Sessions] 175 total session models ~
+2019-07-30 19:55:52.286850-0500 Cloud Next[15436:3350124] [Schedule] update from repo for: 2019-07-29 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 19:55:52.290840-0500 Cloud Next[15436:3350124] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 19:55:52.295412-0500 Cloud Next[15436:3350213] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 19:55:52.299020-0500 Cloud Next[15436:3350124] [Schedule] update from repo for: 2019-07-31 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 19:55:52.317711-0500 Cloud Next[15436:3350214] [Sessions] FILTER value:'track-cloud-key-management-service + FILTER value:'track-gcp-marketplace + SPEAKER 'Mizuki Hsu' + SPEAKER 'Michelle Goodstein' + SPEAKER 'Mohamad Sukkar' + SPEAKER 'Michael Baldwin' + FILTER value:'track-cloud-deployment-manager + TEXT 'M' + FILTER value:'track-cloud-for-marketing + SPEAKER 'Pedersen Marcello' + FILTER value:'track-cloud-ml-api + FILTER value:'track-cloud-ml-engine + FILTER value:'track-cloud-ai-platform-to-ml-raihusaikuru + FILTER value:'track-app-maker + FILTER value:'track-cloud-machine-learning-api + FILTER value:'track-hangouts-meet + FILTER value:'track-cloud-memorystore + FILTER value:'track-made-by-google-hadouea + FILTER value:'track-cloud-ml-engine-api + FILTER value:'track-hangouts-meet-hadouea (not on UI thread) ~
+2019-07-30 19:55:56.824870-0500 Cloud Next[15436:3347923] [Sessions] firestore collection updated. 0 added, 0 removed, and 1 modified ~
+2019-07-30 19:55:56.832457-0500 Cloud Next[15436:3347923] [Sessions] models created for attendee 175 ~
+2019-07-30 19:55:57.035626-0500 Cloud Next[15436:3347923] [Sessions] 175 total session models ~
+2019-07-30 19:55:57.074443-0500 Cloud Next[15436:3350214] [Schedule] update from repo for: 2019-07-29 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 19:55:57.078375-0500 Cloud Next[15436:3350214] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 19:55:57.082742-0500 Cloud Next[15436:3350213] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 19:55:57.086379-0500 Cloud Next[15436:3350124] [Schedule] update from repo for: 2019-07-31 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 19:55:57.104519-0500 Cloud Next[15436:3350223] [Sessions] FILTER value:'track-hangouts-meet-hadouea + FILTER value:'track-cloud-memorystore + FILTER value:'track-cloud-ml-api + FILTER value:'track-cloud-for-marketing + FILTER value:'track-gcp-marketplace + SPEAKER 'Pedersen Marcello' + SPEAKER 'Mizuki Hsu' + TEXT 'M' + SPEAKER 'Michelle Goodstein' + SPEAKER 'Michael Baldwin' + FILTER value:'track-cloud-ml-engine + FILTER value:'track-cloud-machine-learning-api + FILTER value:'track-hangouts-meet + FILTER value:'track-cloud-ml-engine-api + FILTER value:'track-cloud-deployment-manager + SPEAKER 'Mohamad Sukkar' + FILTER value:'track-made-by-google-hadouea + FILTER value:'track-cloud-ai-platform-to-ml-raihusaikuru + FILTER value:'track-app-maker + FILTER value:'track-cloud-key-management-service (not on UI thread) ~
+2019-07-30 19:56:54.855272-0500 Cloud Next[15436:3347923] [Sessions] firestore collection updated. 0 added, 0 removed, and 1 modified ~
+2019-07-30 19:56:54.865851-0500 Cloud Next[15436:3347923] [Sessions] models created for attendee 175 ~
+2019-07-30 19:56:55.069393-0500 Cloud Next[15436:3347923] [Sessions] 175 total session models ~
+2019-07-30 19:56:55.114053-0500 Cloud Next[15436:3350213] [Schedule] update from repo for: 2019-07-29 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 19:56:55.120800-0500 Cloud Next[15436:3350213] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 19:56:55.125318-0500 Cloud Next[15436:3350402] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 19:56:55.129084-0500 Cloud Next[15436:3350403] [Schedule] update from repo for: 2019-07-31 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 19:56:55.147000-0500 Cloud Next[15436:3350404] [Sessions] FILTER value:'track-cloud-deployment-manager + FILTER value:'track-cloud-ai-platform-to-ml-raihusaikuru + FILTER value:'track-cloud-ml-engine-api + FILTER value:'track-made-by-google-hadouea + FILTER value:'track-cloud-memorystore + FILTER value:'track-cloud-key-management-service + FILTER value:'track-gcp-marketplace + SPEAKER 'Mizuki Hsu' + TEXT 'M' + FILTER value:'track-cloud-machine-learning-api + SPEAKER 'Michelle Goodstein' + SPEAKER 'Mohamad Sukkar' + FILTER value:'track-cloud-ml-engine + FILTER value:'track-cloud-ml-api + FILTER value:'track-hangouts-meet + SPEAKER 'Michael Baldwin' + SPEAKER 'Pedersen Marcello' + FILTER value:'track-app-maker + FILTER value:'track-hangouts-meet-hadouea + FILTER value:'track-cloud-for-marketing (not on UI thread) ~
+2019-07-30 19:57:16.565373-0500 Cloud Next[15436:3347923] [Sessions] firestore collection updated. 0 added, 0 removed, and 1 modified ~
+2019-07-30 19:57:16.572333-0500 Cloud Next[15436:3347923] [Sessions] models created for attendee 175 ~
+2019-07-30 19:57:16.775908-0500 Cloud Next[15436:3347923] [Sessions] 175 total session models ~
+2019-07-30 19:57:16.817297-0500 Cloud Next[15436:3350403] [Schedule] update from repo for: 2019-07-29 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 19:57:16.821302-0500 Cloud Next[15436:3350403] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 19:57:16.825744-0500 Cloud Next[15436:3350402] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 19:57:16.829382-0500 Cloud Next[15436:3350461] [Schedule] update from repo for: 2019-07-31 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 19:57:16.847227-0500 Cloud Next[15436:3350462] [Sessions] FILTER value:'track-hangouts-meet-hadouea + FILTER value:'track-cloud-ml-engine + FILTER value:'track-made-by-google-hadouea + FILTER value:'track-cloud-for-marketing + SPEAKER 'Michael Baldwin' + FILTER value:'track-cloud-ai-platform-to-ml-raihusaikuru + FILTER value:'track-cloud-deployment-manager + SPEAKER 'Mizuki Hsu' + SPEAKER 'Michelle Goodstein' + SPEAKER 'Mohamad Sukkar' + FILTER value:'track-cloud-key-management-service + FILTER value:'track-cloud-ml-api + FILTER value:'track-hangouts-meet + SPEAKER 'Pedersen Marcello' + TEXT 'M' + FILTER value:'track-gcp-marketplace + FILTER value:'track-cloud-ml-engine-api + FILTER value:'track-cloud-machine-learning-api + FILTER value:'track-cloud-memorystore + FILTER value:'track-app-maker (not on UI thread) ~
+2019-07-30 19:58:48.771681-0500 Cloud Next[15436:3347923] [Sessions] firestore collection updated. 0 added, 0 removed, and 1 modified ~
+2019-07-30 19:58:48.779101-0500 Cloud Next[15436:3347923] [Sessions] models created for attendee 175 ~
+2019-07-30 19:58:48.981631-0500 Cloud Next[15436:3347923] [Sessions] 175 total session models ~
+2019-07-30 19:58:49.004002-0500 Cloud Next[15436:3350760] [Schedule] update from repo for: 2019-07-29 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 19:58:49.008002-0500 Cloud Next[15436:3350760] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 19:58:49.014749-0500 Cloud Next[15436:3350760] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 19:58:49.017017-0500 Cloud Next[15436:3350759] [Schedule] update from repo for: 2019-07-31 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 19:58:50.708903-0500 Cloud Next[15436:3347923] [Sessions] firestore collection updated. 0 added, 0 removed, and 1 modified ~
+2019-07-30 19:58:50.715733-0500 Cloud Next[15436:3347923] [Sessions] models created for attendee 175 ~
+2019-07-30 19:58:50.919322-0500 Cloud Next[15436:3347923] [Sessions] 175 total session models ~
+2019-07-30 19:58:50.961686-0500 Cloud Next[15436:3350770] [Schedule] update from repo for: 2019-07-29 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 19:58:50.965914-0500 Cloud Next[15436:3350770] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 19:58:50.970265-0500 Cloud Next[15436:3350769] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 19:58:50.974087-0500 Cloud Next[15436:3350760] [Schedule] update from repo for: 2019-07-31 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 19:59:55.239070-0500 Cloud Next[15436:3347923] [Sessions] firestore collection updated. 0 added, 0 removed, and 1 modified ~
+2019-07-30 19:59:55.246189-0500 Cloud Next[15436:3347923] [Sessions] models created for attendee 175 ~
+2019-07-30 19:59:55.449291-0500 Cloud Next[15436:3347923] [Sessions] 175 total session models ~
+2019-07-30 19:59:55.490721-0500 Cloud Next[15436:3350760] [Schedule] update from repo for: 2019-07-29 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 19:59:55.494652-0500 Cloud Next[15436:3350760] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 19:59:55.499219-0500 Cloud Next[15436:3350966] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 19:59:55.502625-0500 Cloud Next[15436:3350967] [Schedule] update from repo for: 2019-07-31 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:00:02.251032-0500 Cloud Next[15436:3347923] [Newsfeed] models created for Attendee 20 ~
+2019-07-30 20:00:02.261409-0500 Cloud Next[15436:3350968] [Newsfeed] repository data update emitted with 21 (not on UI thread) ~
+2019-07-30 20:00:36.187274-0500 Cloud Next[15436:3347923] [Sessions] firestore collection updated. 0 added, 0 removed, and 1 modified ~
+2019-07-30 20:00:36.201414-0500 Cloud Next[15436:3347923] [Sessions] models created for attendee 175 ~
+2019-07-30 20:00:36.404952-0500 Cloud Next[15436:3347923] [Sessions] 175 total session models ~
+2019-07-30 20:00:36.447342-0500 Cloud Next[15436:3350968] [Schedule] update from repo for: 2019-07-29 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:00:36.456721-0500 Cloud Next[15436:3350968] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:00:36.461304-0500 Cloud Next[15436:3351137] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:00:36.464868-0500 Cloud Next[15436:3351138] [Schedule] update from repo for: 2019-07-31 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:00:37.604929-0500 Cloud Next[15436:3347923] [Sessions] firestore collection updated. 0 added, 0 removed, and 1 modified ~
+2019-07-30 20:00:37.608412-0500 Cloud Next[15436:3347923] [Sessions] models created for attendee 175 ~
+2019-07-30 20:00:37.811212-0500 Cloud Next[15436:3347923] [Sessions] 175 total session models ~
+2019-07-30 20:00:37.840949-0500 Cloud Next[15436:3351139] [Schedule] update from repo for: 2019-07-29 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:00:37.844878-0500 Cloud Next[15436:3351139] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:00:37.849297-0500 Cloud Next[15436:3351138] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:00:37.853102-0500 Cloud Next[15436:3351139] [Schedule] update from repo for: 2019-07-31 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:00:46.920745-0500 Cloud Next[15436:3347923] [Sessions] firestore collection updated. 0 added, 0 removed, and 1 modified ~
+2019-07-30 20:00:46.927881-0500 Cloud Next[15436:3347923] [Sessions] models created for attendee 175 ~
+2019-07-30 20:00:47.131446-0500 Cloud Next[15436:3347923] [Sessions] 175 total session models ~
+2019-07-30 20:00:47.172449-0500 Cloud Next[15436:3350968] [Schedule] update from repo for: 2019-07-29 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:00:47.176305-0500 Cloud Next[15436:3350968] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:00:47.180794-0500 Cloud Next[15436:3351137] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:00:47.184480-0500 Cloud Next[15436:3350968] [Schedule] update from repo for: 2019-07-31 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:00:48.810462-0500 Cloud Next[15436:3347923] [Sessions] firestore collection updated. 0 added, 0 removed, and 1 modified ~
+2019-07-30 20:00:48.821687-0500 Cloud Next[15436:3347923] [Sessions] models created for attendee 175 ~
+2019-07-30 20:00:49.023890-0500 Cloud Next[15436:3347923] [Sessions] 175 total session models ~
+2019-07-30 20:00:49.059991-0500 Cloud Next[15436:3351151] [Schedule] update from repo for: 2019-07-29 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:00:49.063994-0500 Cloud Next[15436:3351151] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:00:49.068344-0500 Cloud Next[15436:3351137] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:00:49.072133-0500 Cloud Next[15436:3350968] [Schedule] update from repo for: 2019-07-31 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:00:49.478287-0500 Cloud Next[15436:3347923] [Sessions] firestore collection updated. 0 added, 0 removed, and 1 modified ~
+2019-07-30 20:00:49.484977-0500 Cloud Next[15436:3347923] [Sessions] models created for attendee 175 ~
+2019-07-30 20:00:49.688765-0500 Cloud Next[15436:3347923] [Sessions] 175 total session models ~
+2019-07-30 20:00:49.733304-0500 Cloud Next[15436:3350968] [Schedule] update from repo for: 2019-07-29 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:00:49.737298-0500 Cloud Next[15436:3350968] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:00:49.741732-0500 Cloud Next[15436:3351156] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:00:49.745236-0500 Cloud Next[15436:3351151] [Schedule] update from repo for: 2019-07-31 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:01:56.876351-0500 Cloud Next[15436:3347923] [Sessions] firestore collection updated. 0 added, 0 removed, and 1 modified ~
+2019-07-30 20:01:56.883391-0500 Cloud Next[15436:3347923] [Sessions] models created for attendee 175 ~
+2019-07-30 20:01:57.087148-0500 Cloud Next[15436:3347923] [Sessions] 175 total session models ~
+2019-07-30 20:01:57.128078-0500 Cloud Next[15436:3351350] [Schedule] update from repo for: 2019-07-29 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:01:57.132056-0500 Cloud Next[15436:3351350] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:01:57.136488-0500 Cloud Next[15436:3351137] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:01:57.140437-0500 Cloud Next[15436:3351352] [Schedule] update from repo for: 2019-07-31 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:02:47.762563-0500 Cloud Next[15436:3347923] [Sessions] firestore collection updated. 0 added, 0 removed, and 1 modified ~
+2019-07-30 20:02:47.770716-0500 Cloud Next[15436:3347923] [Sessions] models created for attendee 175 ~
+2019-07-30 20:02:47.974233-0500 Cloud Next[15436:3347923] [Sessions] 175 total session models ~
+2019-07-30 20:02:48.016001-0500 Cloud Next[15436:3351401] [Schedule] update from repo for: 2019-07-29 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:02:48.019864-0500 Cloud Next[15436:3351401] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:02:48.024452-0500 Cloud Next[15436:3351402] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:02:48.028149-0500 Cloud Next[15436:3351498] [Schedule] update from repo for: 2019-07-31 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:02:50.309816-0500 Cloud Next[15436:3347923] [Sessions] firestore collection updated. 0 added, 0 removed, and 1 modified ~
+2019-07-30 20:02:50.316508-0500 Cloud Next[15436:3347923] [Sessions] models created for attendee 175 ~
+2019-07-30 20:02:50.520090-0500 Cloud Next[15436:3347923] [Sessions] 175 total session models ~
+2019-07-30 20:02:50.561839-0500 Cloud Next[15436:3351499] [Schedule] update from repo for: 2019-07-29 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:02:50.566734-0500 Cloud Next[15436:3351499] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:02:50.571012-0500 Cloud Next[15436:3351402] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:02:50.574843-0500 Cloud Next[15436:3351401] [Schedule] update from repo for: 2019-07-31 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:03:16.182129-0500 Cloud Next[15436:3347923] [Sessions] firestore collection updated. 0 added, 0 removed, and 1 modified ~
+2019-07-30 20:03:16.190324-0500 Cloud Next[15436:3347923] [Sessions] models created for attendee 175 ~
+2019-07-30 20:03:16.393950-0500 Cloud Next[15436:3347923] [Sessions] 175 total session models ~
+2019-07-30 20:03:16.435751-0500 Cloud Next[15436:3351498] [Schedule] update from repo for: 2019-07-29 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:03:16.439764-0500 Cloud Next[15436:3351498] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:03:16.444186-0500 Cloud Next[15436:3351401] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:03:16.447760-0500 Cloud Next[15436:3351584] [Schedule] update from repo for: 2019-07-31 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:04:18.109009-0500 Cloud Next[15436:3347923] [Sessions] firestore collection updated. 0 added, 0 removed, and 1 modified ~
+2019-07-30 20:04:18.116120-0500 Cloud Next[15436:3347923] [Sessions] models created for attendee 175 ~
+2019-07-30 20:04:18.318944-0500 Cloud Next[15436:3347923] [Sessions] 175 total session models ~
+2019-07-30 20:04:18.361706-0500 Cloud Next[15436:3351739] [Schedule] update from repo for: 2019-07-29 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:04:18.367768-0500 Cloud Next[15436:3351739] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:04:18.372114-0500 Cloud Next[15436:3351401] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:04:18.375830-0500 Cloud Next[15436:3351739] [Schedule] update from repo for: 2019-07-31 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:04:21.317307-0500 Cloud Next[15436:3347923] [Sessions] firestore collection updated. 0 added, 0 removed, and 1 modified ~
+2019-07-30 20:04:21.324168-0500 Cloud Next[15436:3347923] [Sessions] models created for attendee 175 ~
+2019-07-30 20:04:21.527226-0500 Cloud Next[15436:3347923] [Sessions] 175 total session models ~
+2019-07-30 20:04:21.568545-0500 Cloud Next[15436:3351740] [Schedule] update from repo for: 2019-07-29 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:04:21.577266-0500 Cloud Next[15436:3351740] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:04:21.581662-0500 Cloud Next[15436:3351739] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:04:21.585468-0500 Cloud Next[15436:3351401] [Schedule] update from repo for: 2019-07-31 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:05:07.562893-0500 Cloud Next[15436:3347923] [Sessions] firestore collection updated. 0 added, 0 removed, and 1 modified ~
+2019-07-30 20:05:07.569830-0500 Cloud Next[15436:3347923] [Sessions] models created for attendee 175 ~
+2019-07-30 20:05:07.773469-0500 Cloud Next[15436:3347923] [Sessions] 175 total session models ~
+2019-07-30 20:05:07.816710-0500 Cloud Next[15436:3351739] [Schedule] update from repo for: 2019-07-29 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:05:07.820640-0500 Cloud Next[15436:3351739] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:05:07.825612-0500 Cloud Next[15436:3351741] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:05:07.828927-0500 Cloud Next[15436:3351739] [Schedule] update from repo for: 2019-07-31 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:05:22.944361-0500 Cloud Next[15436:3347923] [Sessions] firestore collection updated. 0 added, 0 removed, and 1 modified ~
+2019-07-30 20:05:22.956693-0500 Cloud Next[15436:3347923] [Sessions] models created for attendee 175 ~
+2019-07-30 20:05:23.159994-0500 Cloud Next[15436:3347923] [Sessions] 175 total session models ~
+2019-07-30 20:05:23.203105-0500 Cloud Next[15436:3351739] [Schedule] update from repo for: 2019-07-29 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:05:23.207054-0500 Cloud Next[15436:3351739] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:05:23.211645-0500 Cloud Next[15436:3351936] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:05:23.215265-0500 Cloud Next[15436:3351739] [Schedule] update from repo for: 2019-07-31 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:08:11.040208-0500 Cloud Next[15436:3347923] [Sessions] firestore collection updated. 0 added, 0 removed, and 1 modified ~
+2019-07-30 20:08:11.047245-0500 Cloud Next[15436:3347923] [Sessions] models created for attendee 175 ~
+2019-07-30 20:08:11.250362-0500 Cloud Next[15436:3347923] [Sessions] 175 total session models ~
+2019-07-30 20:08:11.292910-0500 Cloud Next[15436:3352389] [Schedule] update from repo for: 2019-07-29 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:08:11.297332-0500 Cloud Next[15436:3352389] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:08:11.301257-0500 Cloud Next[15436:3352375] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:08:11.305628-0500 Cloud Next[15436:3352394] [Schedule] update from repo for: 2019-07-31 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:11:28.966838-0500 Cloud Next[15436:3347923] [Sessions] firestore collection updated. 0 added, 0 removed, and 1 modified ~
+2019-07-30 20:11:28.978697-0500 Cloud Next[15436:3347923] [Sessions] models created for attendee 175 ~
+2019-07-30 20:11:29.182370-0500 Cloud Next[15436:3347923] [Sessions] 175 total session models ~
+2019-07-30 20:11:29.226018-0500 Cloud Next[15436:3352582] [Schedule] update from repo for: 2019-07-29 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:11:29.230037-0500 Cloud Next[15436:3352582] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:11:29.234135-0500 Cloud Next[15436:3353193] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:11:29.238305-0500 Cloud Next[15436:3353194] [Schedule] update from repo for: 2019-07-31 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:12:08.679626-0500 Cloud Next[15436:3347923] [Sessions] firestore collection updated. 0 added, 0 removed, and 1 modified ~
+2019-07-30 20:12:08.689153-0500 Cloud Next[15436:3347923] [Sessions] models created for attendee 175 ~
+2019-07-30 20:12:08.892874-0500 Cloud Next[15436:3347923] [Sessions] 175 total session models ~
+2019-07-30 20:12:08.935447-0500 Cloud Next[15436:3353194] [Schedule] update from repo for: 2019-07-29 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:12:08.939437-0500 Cloud Next[15436:3353194] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:12:08.943912-0500 Cloud Next[15436:3353234] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:12:08.947584-0500 Cloud Next[15436:3353236] [Schedule] update from repo for: 2019-07-31 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:12:36.832556-0500 Cloud Next[15436:3347923] [Sessions] firestore collection updated. 0 added, 0 removed, and 1 modified ~
+2019-07-30 20:12:36.840806-0500 Cloud Next[15436:3347923] [Sessions] models created for attendee 175 ~
+2019-07-30 20:12:37.043608-0500 Cloud Next[15436:3347923] [Sessions] 175 total session models ~
+2019-07-30 20:12:37.070341-0500 Cloud Next[15436:3353234] [Schedule] update from repo for: 2019-07-29 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:12:37.074340-0500 Cloud Next[15436:3353234] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:12:37.078912-0500 Cloud Next[15436:3353412] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:12:37.082449-0500 Cloud Next[15436:3353234] [Schedule] update from repo for: 2019-07-31 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:13:33.183787-0500 Cloud Next[15436:3347923] [Sessions] firestore collection updated. 0 added, 0 removed, and 1 modified ~
+2019-07-30 20:13:33.192930-0500 Cloud Next[15436:3347923] [Sessions] models created for attendee 175 ~
+2019-07-30 20:13:33.396507-0500 Cloud Next[15436:3347923] [Sessions] 175 total session models ~
+2019-07-30 20:13:33.436719-0500 Cloud Next[15436:3353412] [Schedule] update from repo for: 2019-07-29 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:13:33.440617-0500 Cloud Next[15436:3353412] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:13:33.445156-0500 Cloud Next[15436:3353585] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:13:33.448875-0500 Cloud Next[15436:3353586] [Schedule] update from repo for: 2019-07-31 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:13:44.765306-0500 Cloud Next[15436:3347923] [Sessions] firestore collection updated. 0 added, 0 removed, and 1 modified ~
+2019-07-30 20:13:44.772397-0500 Cloud Next[15436:3347923] [Sessions] models created for attendee 175 ~
+2019-07-30 20:13:44.975178-0500 Cloud Next[15436:3347923] [Sessions] 175 total session models ~
+2019-07-30 20:13:45.020436-0500 Cloud Next[15436:3353587] [Schedule] update from repo for: 2019-07-29 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:13:45.024355-0500 Cloud Next[15436:3353587] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:13:45.029086-0500 Cloud Next[15436:3353613] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:13:45.032682-0500 Cloud Next[15436:3353587] [Schedule] update from repo for: 2019-07-31 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:13:57.565060-0500 Cloud Next[15436:3347923] [Sessions] firestore collection updated. 0 added, 0 removed, and 1 modified ~
+2019-07-30 20:13:57.572160-0500 Cloud Next[15436:3347923] [Sessions] models created for attendee 175 ~
+2019-07-30 20:13:57.775796-0500 Cloud Next[15436:3347923] [Sessions] 175 total session models ~
+2019-07-30 20:13:57.818505-0500 Cloud Next[15436:3353653] [Schedule] update from repo for: 2019-07-29 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:13:57.822536-0500 Cloud Next[15436:3353653] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:13:57.826992-0500 Cloud Next[15436:3353613] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:13:57.830905-0500 Cloud Next[15436:3353655] [Schedule] update from repo for: 2019-07-31 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:16:06.845387-0500 Cloud Next[15436:3347923] [Sessions] firestore collection updated. 0 added, 0 removed, and 1 modified ~
+2019-07-30 20:16:06.855184-0500 Cloud Next[15436:3347923] [Sessions] models created for attendee 175 ~
+2019-07-30 20:16:07.058833-0500 Cloud Next[15436:3347923] [Sessions] 175 total session models ~
+2019-07-30 20:16:07.099166-0500 Cloud Next[15436:3353613] [Schedule] update from repo for: 2019-07-29 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:16:07.103087-0500 Cloud Next[15436:3353613] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:16:07.107693-0500 Cloud Next[15436:3353953] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:16:07.111424-0500 Cloud Next[15436:3353954] [Schedule] update from repo for: 2019-07-31 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:16:23.378470-0500 Cloud Next[15436:3347923] [Sessions] firestore collection updated. 0 added, 0 removed, and 1 modified ~
+2019-07-30 20:16:23.386794-0500 Cloud Next[15436:3347923] [Sessions] models created for attendee 175 ~
+2019-07-30 20:16:23.590471-0500 Cloud Next[15436:3347923] [Sessions] 175 total session models ~
+2019-07-30 20:16:23.630993-0500 Cloud Next[15436:3353953] [Schedule] update from repo for: 2019-07-29 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:16:23.635013-0500 Cloud Next[15436:3353953] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:16:23.639692-0500 Cloud Next[15436:3354018] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:16:23.643337-0500 Cloud Next[15436:3354019] [Schedule] update from repo for: 2019-07-31 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:16:45.198529-0500 Cloud Next[15436:3347923] [Sessions] firestore collection updated. 0 added, 0 removed, and 1 modified ~
+2019-07-30 20:16:45.205496-0500 Cloud Next[15436:3347923] [Sessions] models created for attendee 175 ~
+2019-07-30 20:16:45.409174-0500 Cloud Next[15436:3347923] [Sessions] 175 total session models ~
+2019-07-30 20:16:45.450623-0500 Cloud Next[15436:3354018] [Schedule] update from repo for: 2019-07-29 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:16:45.454634-0500 Cloud Next[15436:3354018] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:16:45.459089-0500 Cloud Next[15436:3354019] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:16:45.462612-0500 Cloud Next[15436:3354091] [Schedule] update from repo for: 2019-07-31 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:18:32.765904-0500 Cloud Next[15436:3347923] [Sessions] firestore collection updated. 0 added, 0 removed, and 1 modified ~
+2019-07-30 20:18:32.780287-0500 Cloud Next[15436:3347923] [Sessions] models created for attendee 175 ~
+2019-07-30 20:18:32.983945-0500 Cloud Next[15436:3347923] [Sessions] 175 total session models ~
+2019-07-30 20:18:33.023568-0500 Cloud Next[15436:3354390] [Schedule] update from repo for: 2019-07-29 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:18:33.027610-0500 Cloud Next[15436:3354390] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:18:33.032165-0500 Cloud Next[15436:3354464] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:18:33.035977-0500 Cloud Next[15436:3354465] [Schedule] update from repo for: 2019-07-31 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:19:11.067620-0500 Cloud Next[15436:3347923] [Sessions] firestore collection updated. 0 added, 0 removed, and 1 modified ~
+2019-07-30 20:19:11.074628-0500 Cloud Next[15436:3347923] [Sessions] models created for attendee 175 ~
+2019-07-30 20:19:11.278267-0500 Cloud Next[15436:3347923] [Sessions] 175 total session models ~
+2019-07-30 20:19:11.317674-0500 Cloud Next[15436:3354465] [Schedule] update from repo for: 2019-07-29 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:19:11.321640-0500 Cloud Next[15436:3354465] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:19:11.326025-0500 Cloud Next[15436:3354561] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:19:11.329965-0500 Cloud Next[15436:3354562] [Schedule] update from repo for: 2019-07-31 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:19:28.920012-0500 Cloud Next[15436:3347923] [Sessions] firestore collection updated. 0 added, 0 removed, and 1 modified ~
+2019-07-30 20:19:28.928736-0500 Cloud Next[15436:3347923] [Sessions] models created for attendee 175 ~
+2019-07-30 20:19:29.131830-0500 Cloud Next[15436:3347923] [Sessions] 175 total session models ~
+2019-07-30 20:19:29.173507-0500 Cloud Next[15436:3354561] [Schedule] update from repo for: 2019-07-29 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:19:29.177457-0500 Cloud Next[15436:3354561] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:19:29.182190-0500 Cloud Next[15436:3354653] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:19:29.186486-0500 Cloud Next[15436:3354654] [Schedule] update from repo for: 2019-07-31 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:19:43.165711-0500 Cloud Next[15436:3347923] [Sessions] firestore collection updated. 0 added, 0 removed, and 1 modified ~
+2019-07-30 20:19:43.172738-0500 Cloud Next[15436:3347923] [Sessions] models created for attendee 175 ~
+2019-07-30 20:19:43.376302-0500 Cloud Next[15436:3347923] [Sessions] 175 total session models ~
+2019-07-30 20:19:43.417171-0500 Cloud Next[15436:3354654] [Schedule] update from repo for: 2019-07-29 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:19:43.421117-0500 Cloud Next[15436:3354654] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:19:43.425655-0500 Cloud Next[15436:3354699] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:19:43.429174-0500 Cloud Next[15436:3354700] [Schedule] update from repo for: 2019-07-31 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:20:34.931740-0500 Cloud Next[15436:3347923] [Sessions] firestore collection updated. 0 added, 0 removed, and 1 modified ~
+2019-07-30 20:20:34.945591-0500 Cloud Next[15436:3347923] [Sessions] models created for attendee 175 ~
+2019-07-30 20:20:35.148247-0500 Cloud Next[15436:3347923] [Sessions] 175 total session models ~
+2019-07-30 20:20:35.191061-0500 Cloud Next[15436:3354699] [Schedule] update from repo for: 2019-07-29 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:20:35.194961-0500 Cloud Next[15436:3354699] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:20:35.199381-0500 Cloud Next[15436:3354909] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:20:35.203090-0500 Cloud Next[15436:3354699] [Schedule] update from repo for: 2019-07-31 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:20:54.063711-0500 Cloud Next[15436:3347923] [Sessions] firestore collection updated. 0 added, 0 removed, and 1 modified ~
+2019-07-30 20:20:54.070421-0500 Cloud Next[15436:3347923] [Sessions] models created for attendee 175 ~
+2019-07-30 20:20:54.274173-0500 Cloud Next[15436:3347923] [Sessions] 175 total session models ~
+2019-07-30 20:20:54.314451-0500 Cloud Next[15436:3354699] [Schedule] update from repo for: 2019-07-29 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:20:54.318288-0500 Cloud Next[15436:3354699] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:20:54.322637-0500 Cloud Next[15436:3354947] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:20:54.326478-0500 Cloud Next[15436:3354948] [Schedule] update from repo for: 2019-07-31 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:21:11.357930-0500 Cloud Next[15436:3347923] [Sessions] user schedule firestore collection updated. 0 added, 0 removed, and 1 modified ~
+2019-07-30 20:21:11.384922-0500 Cloud Next[15436:3354947] [Schedule] update from repo for: 2019-07-29 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:21:11.387969-0500 Cloud Next[15436:3354947] [Schedule] update from repo for: 2019-07-29 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:21:11.391666-0500 Cloud Next[15436:3354947] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:21:11.396229-0500 Cloud Next[15436:3354947] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:21:11.397089-0500 Cloud Next[15436:3355002] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:21:11.401669-0500 Cloud Next[15436:3355003] [Schedule] update from repo for: 2019-07-31 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:21:11.406437-0500 Cloud Next[15436:3355002] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:21:11.406908-0500 Cloud Next[15436:3355003] [Schedule] update from repo for: 2019-07-31 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:21:12.005714-0500 Cloud Next[15436:3347923] [Sessions] firestore collection updated. 0 added, 0 removed, and 1 modified ~
+2019-07-30 20:21:12.013846-0500 Cloud Next[15436:3347923] [Sessions] models created for attendee 175 ~
+2019-07-30 20:21:12.217601-0500 Cloud Next[15436:3347923] [Sessions] 175 total session models ~
+2019-07-30 20:21:12.264946-0500 Cloud Next[15436:3355002] [Schedule] update from repo for: 2019-07-29 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:21:12.268855-0500 Cloud Next[15436:3355002] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:21:12.273299-0500 Cloud Next[15436:3355003] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:21:12.276673-0500 Cloud Next[15436:3354947] [Schedule] update from repo for: 2019-07-31 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:21:12.286070-0500 Cloud Next[15436:3355002] [Schedule] update from repo for: 2019-07-29 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:21:12.289169-0500 Cloud Next[15436:3354947] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:21:12.292211-0500 Cloud Next[15436:3355003] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:21:12.294996-0500 Cloud Next[15436:3355002] [Schedule] update from repo for: 2019-07-31 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:21:38.312030-0500 Cloud Next[15436:3347923] [Sessions] firestore collection updated. 0 added, 0 removed, and 1 modified ~
+2019-07-30 20:21:38.321122-0500 Cloud Next[15436:3347923] [Sessions] models created for attendee 175 ~
+2019-07-30 20:21:38.523831-0500 Cloud Next[15436:3347923] [Sessions] 175 total session models ~
+2019-07-30 20:21:38.604891-0500 Cloud Next[15436:3355007] [Schedule] update from repo for: 2019-07-29 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:21:38.615314-0500 Cloud Next[15436:3355102] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:21:38.621747-0500 Cloud Next[15436:3355007] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:21:38.625892-0500 Cloud Next[15436:3355104] [Schedule] update from repo for: 2019-07-31 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:21:38.640648-0500 Cloud Next[15436:3355104] [Schedule] update from repo for: 2019-07-29 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:21:38.644540-0500 Cloud Next[15436:3355007] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:21:38.647626-0500 Cloud Next[15436:3355102] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:21:38.650594-0500 Cloud Next[15436:3355104] [Schedule] update from repo for: 2019-07-31 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:21:52.402982-0500 Cloud Next[15436:3347923] [Sessions] firestore collection updated. 0 added, 0 removed, and 1 modified ~
+2019-07-30 20:21:52.412876-0500 Cloud Next[15436:3347923] [Sessions] models created for attendee 175 ~
+2019-07-30 20:21:52.616538-0500 Cloud Next[15436:3347923] [Sessions] 175 total session models ~
+2019-07-30 20:21:52.655540-0500 Cloud Next[15436:3355104] [Schedule] update from repo for: 2019-07-29 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:21:52.659469-0500 Cloud Next[15436:3355104] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:21:52.664098-0500 Cloud Next[15436:3355348] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:21:52.667740-0500 Cloud Next[15436:3355104] [Schedule] update from repo for: 2019-07-31 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:21:52.678742-0500 Cloud Next[15436:3355353] [Schedule] update from repo for: 2019-07-29 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:21:52.681697-0500 Cloud Next[15436:3355104] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:21:52.684801-0500 Cloud Next[15436:3355348] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:21:52.687934-0500 Cloud Next[15436:3355353] [Schedule] update from repo for: 2019-07-31 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:22:15.501666-0500 Cloud Next[15436:3347923] [Sessions] firestore collection updated. 0 added, 0 removed, and 1 modified ~
+2019-07-30 20:22:15.512610-0500 Cloud Next[15436:3347923] [Sessions] models created for attendee 175 ~
+2019-07-30 20:22:15.716270-0500 Cloud Next[15436:3347923] [Sessions] 175 total session models ~
+2019-07-30 20:22:15.758304-0500 Cloud Next[15436:3355104] [Schedule] update from repo for: 2019-07-29 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:22:15.762311-0500 Cloud Next[15436:3355104] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:22:15.767003-0500 Cloud Next[15436:3355685] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:22:15.770573-0500 Cloud Next[15436:3355104] [Schedule] update from repo for: 2019-07-31 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:22:15.780696-0500 Cloud Next[15436:3355104] [Schedule] update from repo for: 2019-07-29 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:22:15.784409-0500 Cloud Next[15436:3355104] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:22:15.787388-0500 Cloud Next[15436:3355685] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:22:15.790568-0500 Cloud Next[15436:3355690] [Schedule] update from repo for: 2019-07-31 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:22:26.021032-0500 Cloud Next[15436:3347923] [Sessions] firestore collection updated. 0 added, 0 removed, and 1 modified ~
+2019-07-30 20:22:26.028461-0500 Cloud Next[15436:3347923] [Sessions] models created for attendee 175 ~
+2019-07-30 20:22:26.232129-0500 Cloud Next[15436:3347923] [Sessions] 175 total session models ~
+2019-07-30 20:22:26.275464-0500 Cloud Next[15436:3355690] [Schedule] update from repo for: 2019-07-29 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:22:26.279424-0500 Cloud Next[15436:3355690] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:22:26.283926-0500 Cloud Next[15436:3355104] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:22:26.287559-0500 Cloud Next[15436:3355730] [Schedule] update from repo for: 2019-07-31 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:22:26.300227-0500 Cloud Next[15436:3355730] [Schedule] update from repo for: 2019-07-29 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:22:26.303255-0500 Cloud Next[15436:3355104] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:22:26.306284-0500 Cloud Next[15436:3355690] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:22:26.309209-0500 Cloud Next[15436:3355730] [Schedule] update from repo for: 2019-07-31 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:22:26.338614-0500 Cloud Next[15436:3347923] [Sessions] user schedule firestore collection updated. 1 added, 0 removed, and 0 modified ~
+2019-07-30 20:22:26.350854-0500 Cloud Next[15436:3355690] [Schedule] update from repo for: 2019-07-29 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:22:26.352600-0500 Cloud Next[15436:3355690] [Schedule] update from repo for: 2019-07-29 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:22:26.354777-0500 Cloud Next[15436:3355690] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:22:26.358275-0500 Cloud Next[15436:3355690] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:22:26.359248-0500 Cloud Next[15436:3355104] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:22:26.362883-0500 Cloud Next[15436:3355732] [Schedule] update from repo for: 2019-07-31 15:00:00 +0000 with 3 scheduled sessions (not on UI thread) ~
+2019-07-30 20:22:26.366318-0500 Cloud Next[15436:3355104] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:22:26.367709-0500 Cloud Next[15436:3355731] [Schedule] update from repo for: 2019-07-31 15:00:00 +0000 with 3 scheduled sessions (not on UI thread) ~
+2019-07-30 20:24:13.158955-0500 Cloud Next[15436:3347923] [Sessions] firestore collection updated. 0 added, 0 removed, and 1 modified ~
+2019-07-30 20:24:13.166560-0500 Cloud Next[15436:3347923] [Sessions] models created for attendee 175 ~
+2019-07-30 20:24:13.370255-0500 Cloud Next[15436:3347923] [Sessions] 175 total session models ~
+2019-07-30 20:24:13.412962-0500 Cloud Next[15436:3356042] [Schedule] update from repo for: 2019-07-29 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:24:13.418255-0500 Cloud Next[15436:3356042] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:24:13.422532-0500 Cloud Next[15436:3355733] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:24:13.426144-0500 Cloud Next[15436:3356042] [Schedule] update from repo for: 2019-07-31 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:24:13.437907-0500 Cloud Next[15436:3355733] [Schedule] update from repo for: 2019-07-29 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:24:13.440511-0500 Cloud Next[15436:3356042] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:24:13.444163-0500 Cloud Next[15436:3356044] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:24:13.447080-0500 Cloud Next[15436:3355733] [Schedule] update from repo for: 2019-07-31 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:24:13.455837-0500 Cloud Next[15436:3356042] [Schedule] update from repo for: 2019-07-29 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:24:13.458114-0500 Cloud Next[15436:3356045] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:24:13.460617-0500 Cloud Next[15436:3355733] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:24:13.462981-0500 Cloud Next[15436:3356042] [Schedule] update from repo for: 2019-07-31 15:00:00 +0000 with 3 scheduled sessions (not on UI thread) ~
+2019-07-30 20:25:18.547187-0500 Cloud Next[15436:3347923] [Sessions] firestore collection updated. 0 added, 0 removed, and 1 modified ~
+2019-07-30 20:25:18.554385-0500 Cloud Next[15436:3347923] [Sessions] models created for attendee 175 ~
+2019-07-30 20:25:18.758028-0500 Cloud Next[15436:3347923] [Sessions] 175 total session models ~
+2019-07-30 20:25:18.799893-0500 Cloud Next[15436:3356229] [Schedule] update from repo for: 2019-07-29 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:25:18.803844-0500 Cloud Next[15436:3356229] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:25:18.808320-0500 Cloud Next[15436:3356046] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:25:18.812244-0500 Cloud Next[15436:3356230] [Schedule] update from repo for: 2019-07-31 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:25:18.823124-0500 Cloud Next[15436:3356046] [Schedule] update from repo for: 2019-07-29 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:25:18.826050-0500 Cloud Next[15436:3356230] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:25:18.829155-0500 Cloud Next[15436:3356229] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:25:18.832193-0500 Cloud Next[15436:3356046] [Schedule] update from repo for: 2019-07-31 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:25:18.841305-0500 Cloud Next[15436:3356232] [Schedule] update from repo for: 2019-07-29 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:25:18.843588-0500 Cloud Next[15436:3356230] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:25:18.845743-0500 Cloud Next[15436:3356229] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:25:18.848241-0500 Cloud Next[15436:3356232] [Schedule] update from repo for: 2019-07-31 15:00:00 +0000 with 3 scheduled sessions (not on UI thread) ~
+2019-07-30 20:25:41.545119-0500 Cloud Next[15436:3347923] [Sessions] firestore collection updated. 0 added, 0 removed, and 1 modified ~
+2019-07-30 20:25:41.552402-0500 Cloud Next[15436:3347923] [Sessions] models created for attendee 175 ~
+2019-07-30 20:25:41.555572-0500 Cloud Next[15436:3347923] [Sessions] firestore collection updated. 0 added, 0 removed, and 1 modified ~
+2019-07-30 20:25:41.562362-0500 Cloud Next[15436:3347923] [Sessions] models created for attendee 175 ~
+2019-07-30 20:25:41.766007-0500 Cloud Next[15436:3347923] [Sessions] 175 total session models ~
+2019-07-30 20:25:41.805673-0500 Cloud Next[15436:3356289] [Schedule] update from repo for: 2019-07-29 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:25:41.809619-0500 Cloud Next[15436:3356289] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:25:41.814048-0500 Cloud Next[15436:3356046] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:25:41.817900-0500 Cloud Next[15436:3356289] [Schedule] update from repo for: 2019-07-31 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:25:41.830565-0500 Cloud Next[15436:3356046] [Schedule] update from repo for: 2019-07-29 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:25:41.833917-0500 Cloud Next[15436:3356046] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:25:41.836895-0500 Cloud Next[15436:3356289] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:25:41.840154-0500 Cloud Next[15436:3356294] [Schedule] update from repo for: 2019-07-31 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:25:41.849129-0500 Cloud Next[15436:3356290] [Schedule] update from repo for: 2019-07-29 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:25:41.852031-0500 Cloud Next[15436:3356046] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:25:41.855188-0500 Cloud Next[15436:3356289] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:25:41.855933-0500 Cloud Next[15436:3356294] [Schedule] update from repo for: 2019-07-31 15:00:00 +0000 with 3 scheduled sessions (not on UI thread) ~
+2019-07-30 20:25:49.559173-0500 Cloud Next[15436:3347923] [Sessions] firestore collection updated. 0 added, 0 removed, and 1 modified ~
+2019-07-30 20:25:49.565976-0500 Cloud Next[15436:3347923] [Sessions] models created for attendee 175 ~
+2019-07-30 20:25:49.769385-0500 Cloud Next[15436:3347923] [Sessions] 175 total session models ~
+2019-07-30 20:25:49.814027-0500 Cloud Next[15436:3356296] [Schedule] update from repo for: 2019-07-29 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:25:49.818032-0500 Cloud Next[15436:3356296] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:25:49.822537-0500 Cloud Next[15436:3356290] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:25:49.826343-0500 Cloud Next[15436:3356307] [Schedule] update from repo for: 2019-07-31 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:25:49.838946-0500 Cloud Next[15436:3356290] [Schedule] update from repo for: 2019-07-29 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:25:49.841942-0500 Cloud Next[15436:3356307] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:25:49.844839-0500 Cloud Next[15436:3356308] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:25:49.848079-0500 Cloud Next[15436:3356290] [Schedule] update from repo for: 2019-07-31 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:25:49.856403-0500 Cloud Next[15436:3356309] [Schedule] update from repo for: 2019-07-29 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:25:49.859066-0500 Cloud Next[15436:3356307] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:25:49.861045-0500 Cloud Next[15436:3356290] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:25:49.863600-0500 Cloud Next[15436:3356309] [Schedule] update from repo for: 2019-07-31 15:00:00 +0000 with 3 scheduled sessions (not on UI thread) ~
+2019-07-30 20:25:51.490615-0500 Cloud Next[15436:3347923] [Sessions] firestore collection updated. 0 added, 0 removed, and 1 modified ~
+2019-07-30 20:25:51.501480-0500 Cloud Next[15436:3347923] [Sessions] models created for attendee 175 ~
+2019-07-30 20:25:51.705090-0500 Cloud Next[15436:3347923] [Sessions] 175 total session models ~
+2019-07-30 20:25:51.748232-0500 Cloud Next[15436:3356309] [Schedule] update from repo for: 2019-07-29 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:25:51.752205-0500 Cloud Next[15436:3356309] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:25:51.756621-0500 Cloud Next[15436:3356307] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:25:51.760376-0500 Cloud Next[15436:3356290] [Schedule] update from repo for: 2019-07-31 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:25:51.771268-0500 Cloud Next[15436:3356290] [Schedule] update from repo for: 2019-07-29 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:25:51.774786-0500 Cloud Next[15436:3356290] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:25:51.777789-0500 Cloud Next[15436:3356307] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:25:51.780785-0500 Cloud Next[15436:3356309] [Schedule] update from repo for: 2019-07-31 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:25:51.789757-0500 Cloud Next[15436:3356308] [Schedule] update from repo for: 2019-07-29 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:25:51.792290-0500 Cloud Next[15436:3356290] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:25:51.794394-0500 Cloud Next[15436:3356308] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:25:51.796952-0500 Cloud Next[15436:3356307] [Schedule] update from repo for: 2019-07-31 15:00:00 +0000 with 3 scheduled sessions (not on UI thread) ~
+2019-07-30 20:26:01.277222-0500 Cloud Next[15436:3347923] [Speakers] firestore collection updated. 0 added, 0 removed, and 2 modified ~
+2019-07-30 20:26:47.890031-0500 Cloud Next[15436:3347923] [Sessions] firestore collection updated. 0 added, 0 removed, and 1 modified ~
+2019-07-30 20:26:47.897466-0500 Cloud Next[15436:3347923] [Sessions] models created for attendee 175 ~
+2019-07-30 20:26:48.101025-0500 Cloud Next[15436:3347923] [Sessions] 175 total session models ~
+2019-07-30 20:26:48.142480-0500 Cloud Next[15436:3356309] [Schedule] update from repo for: 2019-07-29 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:26:48.146430-0500 Cloud Next[15436:3356309] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:26:48.151234-0500 Cloud Next[15436:3356515] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:26:48.154593-0500 Cloud Next[15436:3356309] [Schedule] update from repo for: 2019-07-31 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:26:48.165040-0500 Cloud Next[15436:3356309] [Schedule] update from repo for: 2019-07-29 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:26:48.168339-0500 Cloud Next[15436:3356309] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:26:48.171348-0500 Cloud Next[15436:3356515] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:26:48.174594-0500 Cloud Next[15436:3356517] [Schedule] update from repo for: 2019-07-31 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:26:48.183412-0500 Cloud Next[15436:3356517] [Schedule] update from repo for: 2019-07-29 15:00:00 +0000 with 2 scheduled sessions (not on UI thread) ~
+2019-07-30 20:26:48.186951-0500 Cloud Next[15436:3356309] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:26:48.188388-0500 Cloud Next[15436:3356515] [Schedule] update from repo for: 2019-07-30 15:00:00 +0000 with 4 scheduled sessions (not on UI thread) ~
+2019-07-30 20:26:48.190787-0500 Cloud Next[15436:3356518] [Schedule] update from repo for: 2019-07-31 15:00:00 +0000 with 3 scheduled sessions (not on UI thread) ~

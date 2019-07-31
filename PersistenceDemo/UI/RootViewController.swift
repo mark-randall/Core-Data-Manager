@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import CoreData
 import Dwifft
 
 final class PostsViewController: UITableViewController {
@@ -15,15 +14,13 @@ final class PostsViewController: UITableViewController {
     // MARK: - Dependencies
     
     var coreDataManager: CoreDataManager?
+    var repository: PostsRepositoryProtocol?
     
     // MARK: - DataSource
     
-    /// FRC listens for Core Data updates
-    private var fetchedResultsController: NSFetchedResultsController<Post>?
-    
     /// Dwifft handles tableview update
     /// TODO: Will be replaced by Swift Standard Library (5.1) or Foundation (iOS >=13) in the future
-    private var dataSource: SingleSectionTableViewDiffCalculator<Post>?
+    private var dataSource: SingleSectionTableViewDiffCalculator<PostData>?
     
     // MARK: - UIViewController Lifecycle
     
@@ -37,29 +34,16 @@ final class PostsViewController: UITableViewController {
     
     private func configureDataSource() {
         
-        // Create FRC
-        let sort = NSSortDescriptor(key: PostAttribute.created, ascending: true)
-        guard let fetchedResultsController: NSFetchedResultsController<Post> = coreDataManager?.createResultsController(predicate: nil, sortDescriptors: [sort]) else {
-            preconditionFailure()
-        }
-        
-        fetchedResultsController.delegate = self
-        
-        // Start FRC
-        do {
-            try fetchedResultsController.performFetch()
-        } catch {
-            preconditionFailure()
-        }
-        
-        self.fetchedResultsController = fetchedResultsController
-        
         // Create Dwifft calc / DataSource
         dataSource = SingleSectionTableViewDiffCalculator(
             tableView: tableView,
-            initialRows: fetchedResultsController.fetchedObjects ?? [],
+            initialRows: [],
             sectionIndex: 0
         )
+        
+        repository?.fetchPosts { [weak self] in
+            self?.dataSource?.rows = $0
+        }
     }
     
     // MARK: - Action
@@ -67,28 +51,15 @@ final class PostsViewController: UITableViewController {
     @IBAction private func addButtonTapped() {
         
         // Create
-        guard
-            let coreDataManager = self.coreDataManager,
-            let model: Post = coreDataManager.createObject()
-            else {
-                preconditionFailure()
-        }
-        
-        model.id = UUID().uuidString
-        model.title = randomString(length: 8)
-        model.created = Date()
-        
-        // Save
-        do {
-            try coreDataManager.save()
-        } catch {
+        let create = CreatePostData(title: randomString(length: 8), content: randomString(length: 64))
+        repository?.createPost(create: create) {
             
-            // Present alert
-            present(createCoreDataAlert(error: error), animated: true, completion: nil)
-            
-            // Rollback context.
-            // NOTE: this will rollback all unsaved changes
-            self.coreDataManager?.rollBack()
+            switch $0 {
+            case .success:
+                print("Post created")
+            case .failure(let error):
+                present(createCoreDataAlert(error: error), animated: true, completion: nil)
+            }
         }
     }
 
@@ -109,27 +80,23 @@ final class PostsViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         
-        
         if editingStyle == .delete {
             
-            // Delete
+            // Data for post to delete
             guard let model = dataSource?.rows[indexPath.row] else {
                 assertionFailure("invalid delete indexPath row")
                 return
             }
-            coreDataManager?.deleteObject(model)
             
-            // Save
-            do {
-                try self.coreDataManager?.save()
-            } catch {
+            // Delete
+            repository?.deletePost(withId: model.id) {
                 
-                // Present alert
-                present(createCoreDataAlert(error: error), animated: true, completion: nil)
-                
-                // Rollback context.
-                // NOTE: this will rollback all unsaved changes
-                self.coreDataManager?.rollBack()
+                switch $0 {
+                case .success:
+                    print("Post deleted")
+                case .failure(let error):
+                    present(createCoreDataAlert(error: error), animated: true, completion: nil)
+                }
             }
         }
     }
@@ -146,14 +113,5 @@ final class PostsViewController: UITableViewController {
         let alert = UIAlertController(title: "Error", message: error.localizedDescription, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
         return alert
-    }
-}
-
-// MARK: - FetchedResultsControllerDelegate
-
-extension PostsViewController: NSFetchedResultsControllerDelegate {
-    
-    func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
-        dataSource?.rows = fetchedResultsController?.fetchedObjects ?? []
     }
 }

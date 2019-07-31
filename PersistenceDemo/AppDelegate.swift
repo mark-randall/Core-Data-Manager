@@ -18,6 +18,7 @@ class AppDelegate: UIResponder {
     // MARK: Dependencies
     
     private lazy var coreDataManager = CoreDataManager(modelName: "PersistenceDemo")
+    private lazy var repository  = Repository(coreDataManager: coreDataManager)
 }
 
 
@@ -33,7 +34,7 @@ extension AppDelegate: UIApplicationDelegate {
         guard let postsVC = (window?.rootViewController as? UINavigationController)?.topViewController as? PostsViewController else {
             preconditionFailure()
         }
-        postsVC.coreDataManager = coreDataManager
+        postsVC.repository = repository
         
         return true
     }

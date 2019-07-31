@@ -31,12 +31,7 @@ final class CoreDataManager {
         
         // TODO: pass at least model in
         let container = NSPersistentContainer(name: self.modelName)
-        
-        let description = NSPersistentStoreDescription()
-        description.shouldMigrateStoreAutomatically = true
-        description.shouldInferMappingModelAutomatically = true
-        container.persistentStoreDescriptions =  [description]
-        
+                
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             
             if let error = error as NSError? {

@@ -10,7 +10,7 @@
 		0204738122F0C21B009ACAA8 /* Post+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0204737D22F0C21B009ACAA8 /* Post+CoreDataClass.swift */; };
 		0204738322F0C21B009ACAA8 /* Tag+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0204737F22F0C21B009ACAA8 /* Tag+CoreDataClass.swift */; };
 		0204738622F0D7D9009ACAA8 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0204738522F0D7D9009ACAA8 /* CoreDataManager.swift */; };
-		0204738922F0EC69009ACAA8 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0204738822F0EC69009ACAA8 /* RootViewController.swift */; };
+		0204738922F0EC69009ACAA8 /* PostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0204738822F0EC69009ACAA8 /* PostsViewController.swift */; };
 		0204738B22F129A8009ACAA8 /* NSManagedObject+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0204738A22F129A8009ACAA8 /* NSManagedObject+Util.swift */; };
 		0204738D22F12DCF009ACAA8 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 0204738C22F12DCF009ACAA8 /* README.md */; };
 		0204738F22F15FFA009ACAA8 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0204738E22F15FFA009ACAA8 /* Repository.swift */; };
@@ -47,7 +47,7 @@
 		0204737D22F0C21B009ACAA8 /* Post+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Post+CoreDataClass.swift"; sourceTree = "<group>"; };
 		0204737F22F0C21B009ACAA8 /* Tag+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tag+CoreDataClass.swift"; sourceTree = "<group>"; };
 		0204738522F0D7D9009ACAA8 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
-		0204738822F0EC69009ACAA8 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		0204738822F0EC69009ACAA8 /* PostsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsViewController.swift; sourceTree = "<group>"; };
 		0204738A22F129A8009ACAA8 /* NSManagedObject+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSManagedObject+Util.swift"; sourceTree = "<group>"; };
 		0204738C22F12DCF009ACAA8 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		0204738E22F15FFA009ACAA8 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
@@ -113,7 +113,7 @@
 		0204738722F0EC36009ACAA8 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				0204738822F0EC69009ACAA8 /* RootViewController.swift */,
+				0204738822F0EC69009ACAA8 /* PostsViewController.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -416,7 +416,7 @@
 				0204738B22F129A8009ACAA8 /* NSManagedObject+Util.swift in Sources */,
 				0204738122F0C21B009ACAA8 /* Post+CoreDataClass.swift in Sources */,
 				0204738F22F15FFA009ACAA8 /* Repository.swift in Sources */,
-				0204738922F0EC69009ACAA8 /* RootViewController.swift in Sources */,
+				0204738922F0EC69009ACAA8 /* PostsViewController.swift in Sources */,
 				02325EA522F0A17F00533662 /* AppDelegate.swift in Sources */,
 				0204738322F0C21B009ACAA8 /* Tag+CoreDataClass.swift in Sources */,
 				02325EAD22F0A18000533662 /* PersistenceDemo.xcdatamodeld in Sources */,

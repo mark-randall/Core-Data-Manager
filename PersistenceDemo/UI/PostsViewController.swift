@@ -24,11 +24,20 @@ final class PostsViewController: UITableViewController {
     /// Subscription id. Unsubscribe on deinit
     private var postsSubscriptionToken: SubscriptionToken?
     
+    // MARK: - Subviews
+    
+    @IBOutlet weak var addPostButton: UIBarButtonItem? {
+        didSet {
+            addPostButton?.accessibilityLabel = "Add post"
+        }
+    }
+    
     // MARK: - UIViewController Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        title = "Posts"
         tableView.tableFooterView = UIView()
         
         configureDataSource()

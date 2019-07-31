@@ -24,14 +24,18 @@ final class CoreDataManager {
     // MARK: - Core Data stack
     
     private let modelName: String
+    private let persistentStoreDescriptions: NSPersistentStoreDescription?
     
     private lazy var persistentContainer: NSPersistentContainer = { [weak self] in
     
         guard let self = self else { preconditionFailure() }
         
-        // TODO: pass at least model in
         let container = NSPersistentContainer(name: self.modelName)
-                
+        
+        if let persistentStoreDescriptions = persistentStoreDescriptions {
+            container.persistentStoreDescriptions = [persistentStoreDescriptions]
+        }
+        
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             
             if let error = error as NSError? {
@@ -47,8 +51,9 @@ final class CoreDataManager {
     /// TODO: support other types of persistent stores
     ///
     /// - Parameter modelName: String
-    init(modelName: String) {
+    init(modelName: String, persistentStoreDescriptions: NSPersistentStoreDescription? = nil) {
         self.modelName = modelName
+        self.persistentStoreDescriptions = persistentStoreDescriptions
     }
     
     // MARK: - Util

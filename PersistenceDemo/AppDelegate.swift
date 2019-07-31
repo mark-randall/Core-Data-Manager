@@ -17,7 +17,18 @@ class AppDelegate: UIResponder {
 
     // MARK: Dependencies
     
-    private lazy var coreDataManager = CoreDataManager(modelName: "PersistenceDemo")
+    private lazy var coreDataManager: CoreDataManager = {
+        
+        if ProcessInfo.processInfo.environment["USE_TEMP_CD_STORE"] ?? "" == "Yes" {
+            let description = NSPersistentStoreDescription()
+            description.type = NSInMemoryStoreType
+            description.shouldAddStoreAsynchronously = false
+            return CoreDataManager(modelName: "PersistenceDemo", persistentStoreDescriptions: description)
+        } else {
+            return CoreDataManager(modelName: "PersistenceDemo")
+        }
+    }()
+    
     private lazy var repository  = Repository(coreDataManager: coreDataManager)
 }
 

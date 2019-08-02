@@ -83,7 +83,7 @@
          <EnvironmentVariable
             key = "USE_TEMP_CD_STORE"
             value = "Yes"
-            isEnabled = "YES">
+            isEnabled = "NO">
          </EnvironmentVariable>
       </EnvironmentVariables>
       <AdditionalOptions>

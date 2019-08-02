@@ -171,7 +171,6 @@ final class Repository: NSObject, PostsRepositoryProtocol {
     }
 }
 
-
 // MARK: - FetchedResultsControllerDelegate
 
 extension Repository: NSFetchedResultsControllerDelegate {

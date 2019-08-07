@@ -19,7 +19,7 @@ final class PostsViewController: UITableViewController {
     
     // MARK: - ViewModel
     
-    var viewModel: PostsViewModelProtocol?
+    var viewModel: PostsViewModel?
     
     // MARK: - Subviews
     
@@ -55,7 +55,7 @@ final class PostsViewController: UITableViewController {
         )
         
         // Subscribe to view effects
-        viewModel.subscribeToViewEffects { [weak self] viewEffect in
+        viewModel.subscribeToViewEffects { [weak self] (viewEffect: PostsViewEffect) in
             
             switch viewEffect {
                 
@@ -70,7 +70,7 @@ final class PostsViewController: UITableViewController {
         }
         
         // Subscribe to view state
-        viewModel.subscribeToViewState { [weak self] viewState in
+        viewModel.subscribeToViewState { [weak self] (viewState: PostsViewState) in
             self?.dataSource?.rows = viewState.posts
         }
     }
@@ -79,7 +79,7 @@ final class PostsViewController: UITableViewController {
     
     @IBAction private func addButtonTapped() {
         let create = CreatePostData(title: randomString(length: 8), content: randomString(length: 64))
-        viewModel?.eventOccured(.createPost(create))
+        viewModel?.eventOccured(PostsEvent.createPost(create))
     }
 
     // MARK: - UITableViewControllerDataSource
@@ -100,12 +100,12 @@ final class PostsViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         
         if editingStyle == .delete {
-            viewModel?.eventOccured(.deletePost(indexPath: indexPath))
+            viewModel?.eventOccured(PostsEvent.deletePost(indexPath: indexPath))
         }
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        viewModel?.eventOccured(.postTapped(indexPath: indexPath))
+        viewModel?.eventOccured(PostsEvent.postTapped(indexPath: indexPath))
     }
     
     // MARK: - Util

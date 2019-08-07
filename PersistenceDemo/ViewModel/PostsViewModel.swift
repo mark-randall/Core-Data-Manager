@@ -29,25 +29,27 @@ enum PostsEvent {
     case postTapped(indexPath: IndexPath)
 }
 
-protocol PostsViewModelProtocol {
+/// Base class for VM
+class ViewModel<ViewState, ViewEffect, ViewEvent> {
     
     /// Represents state of UI. UI subsribes to this and appropriately reflows its self to reflect this state.
     /// Subscribe to state
     /// Completion is called when underlying state updates
-    func subscribeToViewState(_ completion: @escaping (PostsViewState) -> Void)
+    func subscribeToViewState(_ completion: @escaping (ViewState) -> Void) {}
     
     /// UI acts on effect once, when called
-    func subscribeToViewEffects(_ completion: @escaping (PostsViewEffect) -> Void)
+    func subscribeToViewEffects(_ completion: @escaping (ViewEffect) -> Void) {}
     
     /// All UI actions go through this method
     /// Any state update is async and communicated through a subscribe completion
     /// User or system event input from UI
-    func eventOccured(_ event: PostsEvent)
+    func eventOccured(_ event: ViewEvent) {}
 }
 
 // MARK: - PostsViewModel
 
-final class PostsViewModel: PostsViewModelProtocol {
+final class PostsViewModel: ViewModel<PostsViewState, PostsViewEffect, PostsEvent> {
+    
     
     // MARK: - Dependencies
     
@@ -80,6 +82,8 @@ final class PostsViewModel: PostsViewModelProtocol {
         
         self.repository = repository
         
+        super.init()
+        
         // Subscribe to posts
         postsSubscriptionToken = repository.subscribeToPosts { [weak self] in
             
@@ -90,16 +94,16 @@ final class PostsViewModel: PostsViewModelProtocol {
     
     // MARK: - PostsViewModelProtocol method
     
-    func subscribeToViewState(_ completion: @escaping (PostsViewState) -> Void) {
+    override func subscribeToViewState(_ completion: @escaping (PostsViewState) -> Void) {
         completion(viewState)
         viewStateSubscription = completion
     }
 
-    func subscribeToViewEffects(_ completion: @escaping (PostsViewEffect) -> Void) {
+    override func subscribeToViewEffects(_ completion: @escaping (PostsViewEffect) -> Void) {
         viewEffectSubscription = completion
     }
     
-    func eventOccured(_ event: PostsEvent) {
+    override func eventOccured(_ event: PostsEvent) {
         
         switch event {
             

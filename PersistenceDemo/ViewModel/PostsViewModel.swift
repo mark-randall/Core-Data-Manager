@@ -32,18 +32,15 @@ enum PostsEvent {
 protocol PostsViewModelProtocol {
     
     /// Represents state of UI. UI subsribes to this and appropriately reflows its self to reflect this state.
-    ///
     /// Subscribe to state
     /// Completion is called when underlying state updates
     func subscribeToViewState(_ completion: @escaping (PostsViewState) -> Void)
     
     /// UI acts on effect once, when called
-    ///
     func subscribeToViewEffects(_ completion: @escaping (PostsViewEffect) -> Void)
     
     /// All UI actions go through this method
     /// Any state update is async and communicated through a subscribe completion
-    ///
     /// User or system event input from UI
     func eventOccured(_ event: PostsEvent)
 }
@@ -122,10 +119,10 @@ final class PostsViewModel: PostsViewModelProtocol {
         case .deletePost(let indexPath):
             
             // Data for Post to delete
-            let model = viewState.posts[indexPath.row]
+            let post = viewState.posts[indexPath.row]
             
             // Delete Post with repo
-            repository.deletePost(withId: model.id) { [weak self] in
+            repository.deletePost(withId: post.id) { [weak self] in
                 
                 switch $0 {
                 case .success: break
@@ -135,9 +132,13 @@ final class PostsViewModel: PostsViewModelProtocol {
                 }
             }
 
-        case .postTapped:
-            // TODO: create real VM with real dependencies
-            let detailVM = PostDetailViewModel()
+        case .postTapped(let indexPath):
+            
+            // Create detail VM
+            let post = viewState.posts[indexPath.row]
+            let detailVM = PostDetailViewModel(post: post, repository: repository)
+            
+            // Present detail UI
             viewEffectSubscription?(.presentDetail(detailVM))
         }
     }

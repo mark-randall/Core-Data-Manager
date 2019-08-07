@@ -35,21 +35,18 @@ enum PostsEvent {
 
 protocol PostsViewModelProtocol {
 
-/// Represents state of UI. UI subsribes to this and appropriately reflows its self to reflect this state.
-///
-/// Subscribe to state
-/// Completion is called when underlying state updates
-func subscribeToViewState(_ completion: @escaping (PostsViewState) -> Void)
+    /// Represents state of UI. UI subsribes to this and appropriately reflows its self to reflect this state.
+    /// Subscribe to state
+    /// Completion is called when underlying state updates
+    func subscribeToViewState(_ completion: @escaping (PostsViewState) -> Void)
 
-/// UI acts on effect once, when called
-///
-func subscribeToViewEffects(_ completion: @escaping (PostsViewEffect) -> Void)
+    /// UI acts on effect once, when called
+    func subscribeToViewEffects(_ completion: @escaping (PostsViewEffect) -> Void)
 
-/// All UI actions go through this method
-/// Any state update is async and communicated through a subscribe completion
-///
-/// User or system event input from UI
-func eventOccured(_ event: PostsEvent)
+    /// All UI actions go through this method
+    /// Any state update is async and communicated through a subscribe completion
+    /// User or system event input from UI
+    func eventOccured(_ event: PostsEvent)
 }
 ```
 

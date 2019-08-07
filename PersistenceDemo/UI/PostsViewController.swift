@@ -11,18 +11,15 @@ import Dwifft
 
 final class PostsViewController: UITableViewController {
 
-    // MARK: - Dependencies
-    
-    var repository: PostsRepositoryProtocol?
-    
     // MARK: - DataSource
     
     /// Dwifft handles tableview update
     /// TODO: Will be replaced by Swift Standard Library (5.1) or Foundation (iOS >=13) in the future
     private var dataSource: SingleSectionTableViewDiffCalculator<PostData>?
     
-    /// Subscription id. Unsubscribe on deinit
-    private var postsSubscriptionToken: SubscriptionToken?
+    // MARK: - ViewModel
+    
+    var viewModel: PostsViewModelProtocol?
     
     // MARK: - Subviews
     
@@ -40,18 +37,15 @@ final class PostsViewController: UITableViewController {
         title = "Posts"
         tableView.tableFooterView = UIView()
         
-        configureDataSource()
+        bindToViewModel()
     }
+
     
-    deinit {
+    // MARK: - Bind to ViewModel
+    
+    private func bindToViewModel() {
         
-        // Unsubscribe to posts
-        if let postsSubscriptionToken = self.postsSubscriptionToken {
-            repository?.unsubscribeToPosts(token: postsSubscriptionToken)
-        }
-    }
-    
-    private func configureDataSource() {
+        guard let viewModel = self.viewModel else { preconditionFailure("VM must be set before VC is presented")}
         
         // Create Dwifft calc / DataSource
         dataSource = SingleSectionTableViewDiffCalculator(
@@ -60,28 +54,32 @@ final class PostsViewController: UITableViewController {
             sectionIndex: 0
         )
         
-        // Subscribe to posts
-        postsSubscriptionToken = repository?.subscribeToPosts { [weak self] in
-            print("Posts updated. \($0.count) total.")
-            self?.dataSource?.rows = $0
-        }
+        // Subscribe to view effects
+        viewModel.subscribeTo(viewEffects: { [weak self] viewEffect in
+            
+            switch viewEffect {
+                
+            case .presentDetail: break
+                // TODO:
+                
+            case .presentErrorAlert(let error):
+                let alert = UIAlertController(title: "Error", message: error.localizedDescription, preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+                self?.present(alert, animated: true, completion: nil)
+            }
+        })
+        
+        // Subscribe to view state
+        viewModel.subscribeTo(viewState: { [weak self] viewState in
+            self?.dataSource?.rows = viewState.posts
+        })
     }
     
     // MARK: - Action
     
     @IBAction private func addButtonTapped() {
-        
-        // Create
         let create = CreatePostData(title: randomString(length: 8), content: randomString(length: 64))
-        repository?.createPost(create: create) {
-            
-            switch $0 {
-            case .success:
-                print("Post created")
-            case .failure(let error):
-                present(createCoreDataAlert(error: error), animated: true, completion: nil)
-            }
-        }
+        viewModel?.eventOccured(.createPost(create))
     }
 
     // MARK: - UITableViewControllerDataSource
@@ -102,24 +100,12 @@ final class PostsViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         
         if editingStyle == .delete {
-            
-            // Data for post to delete
-            guard let model = dataSource?.rows[indexPath.row] else {
-                assertionFailure("invalid delete indexPath row")
-                return
-            }
-            
-            // Delete
-            repository?.deletePost(withId: model.id) {
-                
-                switch $0 {
-                case .success:
-                    print("Post deleted")
-                case .failure(let error):
-                    present(createCoreDataAlert(error: error), animated: true, completion: nil)
-                }
-            }
+            viewModel?.eventOccured(.deletePost(indexPath: indexPath))
         }
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        viewModel?.eventOccured(.postTapped(indexPath: indexPath))
     }
     
     // MARK: - Util
@@ -127,12 +113,5 @@ final class PostsViewController: UITableViewController {
     private func randomString(length: Int) -> String {
         let letters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
         return String((0..<length).map { _ in letters.randomElement()! })
-    }
-    
-    private func createCoreDataAlert(error: Error) -> UIAlertController {
-        // TODO: map error to something more useful to the user
-        let alert = UIAlertController(title: "Error", message: error.localizedDescription, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
-        return alert
     }
 }

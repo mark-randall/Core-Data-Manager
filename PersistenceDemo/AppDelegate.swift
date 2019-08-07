@@ -45,7 +45,9 @@ extension AppDelegate: UIApplicationDelegate {
         guard let postsVC = (window?.rootViewController as? UINavigationController)?.topViewController as? PostsViewController else {
             preconditionFailure()
         }
-        postsVC.repository = repository
+        
+        let vm = PostsViewModel(repository: repository)
+        postsVC.viewModel = vm
         
         return true
     }

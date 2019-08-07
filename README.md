@@ -19,18 +19,18 @@ Inspired by:
 
 ```swift
 struct PostsViewState {
-var posts: [PostData]
+    var posts: [PostData]
 }
 
 enum PostsViewEffect {
-case presentDetail(PostDetailViewModelProtocol)
-case presentErrorAlert(Error)
+    case presentDetail(PostDetailViewModelProtocol)
+    case presentErrorAlert(Error)
 }
 
 enum PostsEvent {
-case createPost(CreatePostData)
-case deletePost(indexPath: IndexPath)
-case postTapped(indexPath: IndexPath)
+    case createPost(CreatePostData)
+    case deletePost(indexPath: IndexPath)
+    case postTapped(indexPath: IndexPath)
 }
 
 protocol PostsViewModelProtocol {

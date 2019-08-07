@@ -11,21 +11,18 @@ import Foundation
 // MARK: - PostsViewModelProtocol
 
 /// Object which 'Completely' represents a views current state
-struct PostsViewState {
+struct PostsViewState: Equatable {
     
     // TODO: Swift 5.1 allows structs properties to be set with or without default values and init only with overrides
     // Set defaults after migrating to 5.1
-    
     var posts: [PostData]
 }
 
-/// Events which should be handled once by the view
 enum PostsViewEffect {
     case presentDetail(PostDetailViewModelProtocol)
     case presentErrorAlert(Error)
 }
 
-/// Events the UI passes to the VM
 enum PostsEvent {
     case createPost(CreatePostData)
     case deletePost(indexPath: IndexPath)
@@ -34,16 +31,22 @@ enum PostsEvent {
 
 protocol PostsViewModelProtocol {
     
+    /// Represents state of UI. UI subsribes to this and appropriately reflows its self to reflect this state.
+    ///
     /// Subscribe to state
     /// Completion is called when underlying state updates
-    func subscribeTo(viewState completion: @escaping (PostsViewState) -> Void)
+    func subscribeToViewState(_ completion: @escaping (PostsViewState) -> Void)
     
-    func subscribeTo(viewEffects completion: @escaping (PostsViewEffect) -> Void)
+    /// UI acts on effect once, when called
+    ///
+    func subscribeToViewEffects(_ completion: @escaping (PostsViewEffect) -> Void)
     
-    /// User or system event input occurred
+    /// All UI actions go through this method
+    /// Any state update is async and communicated through a subscribe completion
+    ///
+    /// User or system event input from UI
     func eventOccured(_ event: PostsEvent)
 }
-
 
 // MARK: - PostsViewModel
 
@@ -67,7 +70,7 @@ final class PostsViewModel: PostsViewModelProtocol {
     /// Setting value will updateViewState
     ///
     /// TODO: consider distinct until changed logic.
-    /// Maybe a Swift 5.1 property wrapper user case
+    /// Maybe a Swift 5.1 property wrapper use case
     private(set) var viewState: PostsViewState = PostsViewState(posts: []) {
         didSet {
            viewStateSubscription?(viewState)
@@ -90,12 +93,12 @@ final class PostsViewModel: PostsViewModelProtocol {
     
     // MARK: - PostsViewModelProtocol method
     
-    func subscribeTo(viewState completion: @escaping (PostsViewState) -> Void) {
+    func subscribeToViewState(_ completion: @escaping (PostsViewState) -> Void) {
         completion(viewState)
         viewStateSubscription = completion
     }
 
-    func subscribeTo(viewEffects completion: @escaping (PostsViewEffect) -> Void) {
+    func subscribeToViewEffects(_ completion: @escaping (PostsViewEffect) -> Void) {
         viewEffectSubscription = completion
     }
     

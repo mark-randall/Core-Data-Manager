@@ -55,7 +55,7 @@ final class PostsViewController: UITableViewController {
         )
         
         // Subscribe to view effects
-        viewModel.subscribeTo(viewEffects: { [weak self] viewEffect in
+        viewModel.subscribeToViewEffects { [weak self] viewEffect in
             
             switch viewEffect {
                 
@@ -67,12 +67,12 @@ final class PostsViewController: UITableViewController {
                 alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
                 self?.present(alert, animated: true, completion: nil)
             }
-        })
+        }
         
         // Subscribe to view state
-        viewModel.subscribeTo(viewState: { [weak self] viewState in
+        viewModel.subscribeToViewState { [weak self] viewState in
             self?.dataSource?.rows = viewState.posts
-        })
+        }
     }
     
     // MARK: - Action

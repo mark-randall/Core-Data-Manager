@@ -18,7 +18,7 @@ Inspired by:
 ## ViewModel example
 
 ```swift
-struct PostsViewState {
+struct PostsViewState: Equatable {
     var posts: [PostData]
 }
 

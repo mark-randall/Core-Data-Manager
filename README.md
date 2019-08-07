@@ -16,6 +16,43 @@ Inspired by:
 
 
 ## ViewModel example
+
+```swift
+struct PostsViewState {
+var posts: [PostData]
+}
+
+enum PostsViewEffect {
+case presentDetail(PostDetailViewModelProtocol)
+case presentErrorAlert(Error)
+}
+
+enum PostsEvent {
+case createPost(CreatePostData)
+case deletePost(indexPath: IndexPath)
+case postTapped(indexPath: IndexPath)
+}
+
+protocol PostsViewModelProtocol {
+
+/// Represents state of UI. UI subsribes to this and appropriately reflows its self to reflect this state.
+///
+/// Subscribe to state
+/// Completion is called when underlying state updates
+func subscribeToViewState(_ completion: @escaping (PostsViewState) -> Void)
+
+/// UI acts on effect once, when called
+///
+func subscribeToViewEffects(_ completion: @escaping (PostsViewEffect) -> Void)
+
+/// All UI actions go through this method
+/// Any state update is async and communicated through a subscribe completion
+///
+/// User or system event input from UI
+func eventOccured(_ event: PostsEvent)
+}
+```
+
 I am a fan of this approach because:
 
 ### Refective
@@ -41,38 +78,4 @@ I am a fan of this approach because:
 
 
 
-```swift
-struct PostsViewState {
-    var posts: [PostData]
-}
 
-enum PostsViewEffect {
-    case presentDetail(PostDetailViewModelProtocol)
-    case presentErrorAlert(Error)
-}
-
-enum PostsEvent {
-    case createPost(CreatePostData)
-    case deletePost(indexPath: IndexPath)
-    case postTapped(indexPath: IndexPath)
-}
-
-protocol PostsViewModelProtocol {
-
-/// Represents state of UI. UI subsribes to this and appropriately reflows its self to reflect this state.
-///
-/// Subscribe to state
-/// Completion is called when underlying state updates
-func subscribeTo(viewState completion: @escaping (PostsViewState) -> Void)
-
-/// UI acts on effect once, when called
-///
-func subscribeTo(viewEffects completion: @escaping (PostsViewEffect) -> Void)
-
-/// All UI actions go through this method
-/// Any state update is async and communicated through a subscribe completion
-///
-/// User or system event input from UI
-func eventOccured(_ event: PostsEvent)
-}
-```
